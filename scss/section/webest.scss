@@ -1,0 +1,69 @@
+.webest{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: aliceblue;
+    background-image:url(../../burger/images/bg/bg_webest.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+.webest_content{
+    padding-top: 96px;
+    }
+
+.webest_title{
+font-family: 'gagalinregular';
+  font-size: 72px;
+    
+    color: $black;
+    display: flex;
+    justify-content: center;
+}
+
+.webest_reasons{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 1100px;
+   
+    
+}
+
+.webest_reasons_one{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 30px;
+    margin-top: 40px;
+        text-align: center;
+     padding-bottom: 15%;
+}
+
+.webest_reason_logo{
+    width: rem(73px);
+height: rem(85px);
+    
+}
+
+.webest_reasons_tytle{
+    font-family: 'lifehackmedium';
+font-size: 24px;
+    padding-top: 12px;
+}
+
+.webest_reasons_descr{
+    opacity: 0.8;
+font-family: 'ubunturegular';
+font-size: 14px;
+    margin-top: -12px;
+   
+    
+}
+
+.leaf_tytle{
+    letter-spacing: -0.6px;
+}

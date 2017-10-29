@@ -1,0 +1,66 @@
+.wrapper{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.main_content{
+    height: 100%;
+    min-height: 650px;
+}
+
+.container{
+    width: 940px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.section{
+    height: 100%;
+    min-height: 650px;
+    min-width: 940px;
+}
+
+.order_buttom{
+    max-height: 38px; // не уверенна, что можно так делать
+    padding: 10px 17px ;
+    border-radius: 5px;
+    background-color: $orange;
+    font-size: rem(13px);
+    line-height: 1.42;
+    transition: .5s;
+    &:hover{
+        background-color: darken($orange, 10%);
+    }
+}
+
+.main_links{
+    position: fixed;
+    top:88px;
+    right: 48px;
+    
+}
+.main_links_one{
+ &:after{
+        display: inline-block;
+        
+        content:'';
+        @include circle(5px, #fff);
+     
+        
+         }
+    &:active:after{ //почему так?
+       
+        border: 2px solid #fff;
+        border-radius: 50%;
+        padding: 2px;
+        
+        
+    }
+    
+    
+    
+}

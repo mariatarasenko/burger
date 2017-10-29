@@ -2,36 +2,37 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="../burger/css/main.css">
+   
     <title>Document</title>
 </head>
 <body>
-    <header class="header">
-        <div class="header_nav">
-            <div class="header_nav_logo"><img src="images/logo.png" alt="mr-burger"></div>
-               
+   <div class="wrapper">
+       <div class="main_content">
+            <header class="header">
+        <div class="header_menu">
+            <div class="header_nav_logo"><img src="../burger/images/logo/logo.png" alt="mr-burger"></div>
+               <div class="header_nav">
                    <div class="header_nav_menu">
-                        <ul>
-                            <li><a href="#">О нас </a><span>•</span> </li>
-                            <li><a href="#">Бургеры</a><span>•</span> </li>
-                            <li><a href="#">Команда</a><span>•</span> </li>
-                            <li><a href="#">Меню</a><span>•</span> </li>
-                            <li><a href="#">Отзывы</a><span>•</span> </li>
-                            <li><a href="#">Контакты</a></li>
+                        <ul class="nav_list">
+                            <li class="nav_name"><a class="nav_link" href="#">О нас </a> </li>
+                            <li class="nav_name"><a class="nav_link" href="#">Бургеры</a> </li>
+                            <li class="nav_name"><a class="nav_link"href="#">Команда</a> </li>
+                            <li class="nav_name"><a class="nav_link" href="#">Меню</a> </li>
+                            <li class="nav_name"><a class="nav_link" href="#">Отзывы</a> </li>
+                            <li class="nav_name"><a class="nav_link" href="#">Контакты</a></li>
                         </ul>
                     </div>
                  
-                    <a href="#" class="header_nav_buttom">Заказать</a>   
+                    <a href="#" class="nav_buttom order_buttom">Заказать</a>   
                 
                         
         </div>
-       
+       </div>
         <div class="container">
             <div class="wedo">
                <div class="wedo_pic">
-                   <img src="images/drops.png" alt="drops" v >
-                  <img src="images/main_burder.png" alt="burger"  class="wedo_pic_burger">
+                  <img src="../burger/images/content/burger.png" alt="burger"  class="wedo_pic_burger">
                </div> 
                <div class="wedo_text">
                    <h1 class="wedo_text_top">
@@ -43,62 +44,65 @@
                </div>
             </div>
         </div>
-        <div class="arrow"><a href="#"> <img src="images/arrow-scroll.png" alt="arrow"> </a> </div>
+        <div class="arrow"><a href="#"> <img src="../burger/images/content/arrow-scroll.png" alt="arrow"> </a> </div>
     </header>
     <section class="webest">
+    <div class="container">
+     <div class="webest_content">
       <h2 class="webest_title">мы лучшие</h2>
-       <div class="container">
+       
         <div class="webest_reasons">
             <div class="webest_reasons_one">
-                <img class="webest_reasons_logo" src="images/meat.png" alt="meat">
+                <img class="webest_reason_logo" src="../burger/images/logo/meat.png" alt="meat">
                 <h3 class="webest_reasons_tytle">100% свежее мясо</h3>
                 <p class="webest_reasons_descr">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Ямб неравномерен.</p>
             </div>
             <div class="webest_reasons_one">
-                <img class="webest_reason_logo" src="images/hand.png"     alt="meat">
+                <img class="webest_reason_logo" src="../burger/images/logo/hand.png"     alt="hand">
                 <h3 class="webest_reasons_tytle">Ручная  сборка</h3>
                 <p class="webest_reasons_descr">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Первое полустишие притягивает сюжетный реформаторский пафос.</p>
             </div>
             <div class="webest_reasons_one">
-                <img class="webest_reason_logo" src="images/natural.png"     alt="meat">
-                <h3 class="webest_reasons_tytle">Натуральные ингредиенты</h3>
+                <img class="webest_reason_logo" src="../burger/images/logo/natural.png"     alt="leaf">
+                <h3 class="webest_reasons_tytle leaf_title">Натуральные ингредиенты</h3>
                 <p class="webest_reasons_descr">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест.</p>
             </div>
         </div>
         </div>
+        </div>
     </section>
-    <section class="reviews">
+    <section class="all_reviews">
         <ul class="reviews">
-            <li><div class="reviews_photo"><img src="images/photo-1.png" alt="photo" ><div><span class="reviews_descr"><h4 class="reviews_descr_tytle">Константин Спилберг</h4>
-                <p class="reviews_descr_text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p><a href="#" class="reviews_descr_butt">Подробнее</a> 
+            <li class="one_review"><div class="reviews_photo"><img src="../burger/images/reviews/photo-1.png" alt="photo" ><div><span class="reviews_descr"><h4 class="reviews_descr_tytle">Константин Спилберг</h4>
+                <p class="reviews_descr_text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p><a href="#" class="reviews_descr_butt order_buttom">Подробнее</a> 
                 </span></div></div></li>
             
-            <li><div class="reviews_photo"><img src="images/photo-22.png" alt="photo" ><div><span class="reviews_descr"><h4 class="reviews_descr_tytle">Константин Спилберг</h4>
-                <p class="reviews_descr_text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p><a href="#" class="reviews_descr_butt">Подробнее</a> 
+            <li class="one_review"><div class="reviews_photo"><img src="../burger/images/reviews/photo-2.png" alt="photo" ><div><span class="reviews_descr"><h4 class="reviews_descr_tytle">Константин Спилберг</h4>
+                <p class="reviews_descr_text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p><a href="#" class="reviews_descr_butt order_buttom">Подробнее</a> 
                 </span></div></div></li>
-           <li><div class="reviews_photo"><img src="images/photo-3.png" alt="photo" ><div><span class="reviews_descr"><h4 class="reviews_descr_tytle">Константин Спилберг</h4>
-                <p class="reviews_descr_text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p><a href="#" class="reviews_descr_butt">Подробнее</a> 
+           <li class="one_review"><div class="reviews_photo"><img src="../burger/images/reviews/photo-3.png" alt="photo" ><div><span class="reviews_descr"><h4 class="reviews_descr_tytle">Константин Спилберг</h4>
+                <p class="reviews_descr_text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p><a href="#" class="reviews_descr_butt order_buttom">Подробнее</a> 
                 </span></div></div></li>
-           <li><div class="reviews_photo"><img src="images/photo-4.png" alt="photo" ><div><span class="reviews_descr"><h4 class="reviews_descr_tytle">Константин Спилберг</h4>
-                <p class="reviews_descr_text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p><a href="#" class="reviews_descr_butt">Подробнее</a> 
+           <li class="one_review"><div class="reviews_photo"><img src="../burger/images/reviews/photo-4.png" alt="photo" ><div><span class="reviews_descr"><h4 class="reviews_descr_tytle">Константин Спилберг</h4>
+                <p class="reviews_descr_text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p><a href="#" class="reviews_descr_butt order_buttom">Подробнее</a> 
                 </span></div></div></li>
-            <li><div class="reviews_photo"><img src="images/photo-5.png" alt="photo" ><div><span class="reviews_descr"><h4 class="reviews_descr_tytle">Константин Спилберг</h4>
-                <p class="reviews_descr_text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p><a href="#" class="reviews_descr_butt">Подробнее</a> 
+            <li  class="one_review" ><div class="reviews_photo"><img src="../burger/images/reviews/photo-5.png" alt="photo" ><div><span class="reviews_descr"><h4 class="reviews_descr_tytle">Константин Спилберг</h4>
+                <p class="reviews_descr_text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p><a href="#" class="reviews_descr_butt order_buttom">Подробнее</a> 
                 </span></div></div></li>
-            <li><div class="reviews_photo"><img src="images/photo-6.png" alt="photo" ><div><span class="reviews_descr"><h4 class="reviews_descr_tytle">Константин Спилберг</h4>
-                <p class="reviews_descr_text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p><a href="#" class="reviews_descr_butt">Подробнее</a> 
+            <li  class="one_review"><div class="reviews_photo"><img src="../burger/images/reviews/photo-6.png" alt="photo" ><div><span class="reviews_descr"><h4 class="reviews_descr_tytle">Константин Спилберг</h4>
+                <p class="reviews_descr_text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p><a href="#" class="reviews_descr_butt order_buttom">Подробнее</a> 
                 </span></div></div></li>
-            <li><div class="reviews_photo"><img src="images/photo-7.png" alt="photo" ><div><span class="reviews_descr"><h4 class="reviews_descr_tytle">Константин Спилберг</h4>
-                <p class="reviews_descr_text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p><a href="#" class="reviews_descr_butt">Подробнее</a> 
+            <li  class="one_review"><div class="reviews_photo"><img src="../burger/images/reviews/photo-7.png" alt="photo" ><div><span class="reviews_descr"><h4 class="reviews_descr_tytle">Константин Спилберг</h4>
+                <p class="reviews_descr_text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p><a href="#" class="reviews_descr_butt order_buttom">Подробнее</a> 
                 </span></div></div></li>
-           <li><div class="reviews_photo"><img src="images/photo-8.png" alt="photo" ><div><span class="reviews_descr"><h4 class="reviews_descr_tytle">Константин Спилберг</h4>
-                <p class="reviews_descr_text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p><a href="#" class="reviews_descr_butt">Подробнее</a> 
+           <li  class="one_review"><div class="reviews_photo"><img src="../burger/images/reviews/photo-8.png" alt="photo" ><div><span class="reviews_descr"><h4 class="reviews_descr_tytle">Константин Спилберг</h4>
+                <p class="reviews_descr_text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p><a href="#" class="reviews_descr_butt order_buttom">Подробнее</a> 
                 </span></div></div></li>
         </ul>
     </section>
     <div class="main_links">
             <ul>
-                <li><a class="main_links_one" href="#header">    </a></li>
+                <li ><a  href="#header" class="main_links_one">    </a></li>
                 <li><a class="main_links_one" href="#webest">    </a></li>
                 <li><a class="main_links_one" href="#"> </a></li>
                 <li><a class="main_links_one" href="#"> </a></li>
@@ -109,6 +113,9 @@
             </ul>
         </div>
     
-   <link rel="stylesheet" href="normalize.css"> 
+       </div>
+   </div>
+   
+   <link rel="stylesheet" href="../burger/css/normalize.css"> 
 </body>
 </html>
