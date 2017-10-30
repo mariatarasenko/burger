@@ -19,24 +19,40 @@
 }
 .one_review{
     
-   width: 25%; //я не понимаю , как сделать по другому, чтобы они расползлись по всему экрану. если убрать это свойство , то они будут красиво склеены и все будет ок.
+   width: 25%;
+    height: 50%;
+    margin:  0;
+   
+    padding: 0;
+    position: relative;
 }
+
+
+
 .reviews_photo{
-   position: relative;
-    
-  width: 277px;
-height: 327px;
+   background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
 }
+
+.reviews_png{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-top: -2%;
+ 
+    }
 
 .reviews_descr{
     position: absolute;
     background-color: rgba(0, 0, 0, 0.4);
-    top: 0;
+    top: -2%;
     left: 0;
     width: 100%;
     height: 100%;
-    padding-left: 21px;
-    padding-right: 34px;
+    padding-left: rem(21px);
+    padding-right: rem(34px);
     opacity: 0;
    text-align: left;
     &:hover{
@@ -47,18 +63,19 @@ height: 327px;
 .reviews_descr_tytle{
     color: #ffffff;
     font-family: 'gagalinregular';
-    font-size: 14px;
+    font-size: rem(14px);
     font-weight: 400;
     line-height: 28.11px;
-    padding-bottom: 12px;
+    margin-top: rem(51px);
+    padding-bottom: rem(30px);
 }
 
 .reviews_descr_text{
    color: #ffffff;
-    font-size: 14px;
+    font-size: rem(14px);
     font-weight: 300;
     line-height: 24px;
-    padding-bottom: 15px;
+    padding-bottom: rem(15px);
 }
 
 .reviews_descr_butt{

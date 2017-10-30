@@ -16,8 +16,7 @@
 
 .webest_title{
 font-family: 'gagalinregular';
-  font-size: 72px;
-    
+  font-size: rem(72px);
     color: $black;
     display: flex;
     justify-content: center;
@@ -51,14 +50,14 @@ height: rem(85px);
 
 .webest_reasons_tytle{
     font-family: 'lifehackmedium';
-font-size: 24px;
-    padding-top: 12px;
+font-size: rem(24px);
+    padding-top: rem(12px);
 }
 
 .webest_reasons_descr{
     opacity: 0.8;
 font-family: 'ubunturegular';
-font-size: 14px;
+font-size: rem(14px);
     margin-top: -12px;
    
     
