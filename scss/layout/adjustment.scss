@@ -44,28 +44,27 @@
     
 }
 .main_links_one{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    text-align: center;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    line-height: 12px;
+   
+    
  &:after{
         display: inline-block;
         content:'';
         @include circle(5px, #fff);
-<<<<<<< HEAD
-              }
-  &:active:after{ //почему так?
-      display: inline-block;
-       content:'';
-       @include circle(10px, #fff);
-        border: 4px solid #fff;
-=======
-     
-        
-         }
-    &:active:after{ //пока что находится в стадии поиска ответа на вопрос "как это работает и почему у меня так а не как надо"
+      }
+
+    &:hover{ //пока что находится в стадии поиска ответа на вопрос "как это работает и почему у меня так а не как надо"
        
         border: 2px solid #fff;
-        border-radius: 50%;
-        padding: 2px;
         
->>>>>>> dadf546b320b140f5d8164264b8f5c98135df63a
+        
+
         
         }
     
