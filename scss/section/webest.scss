@@ -1,23 +1,21 @@
-.webest{
+#webest{
     margin: 0;
     padding: 0;
     height: 100%;
     background-color: aliceblue;
     background-image:url(../../burger/images/bg/bg_webest.png);
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat:no-repeat;
     background-position: center;
     
 }
 
 .webest_content{
-    padding-top: 96px;
+    padding-top: rem(40px);
+   
     }
 
 .webest_title{
-font-family: 'gagalinregular';
-  font-size: rem(72px);
-    color: $black;
     display: flex;
     justify-content: center;
 }
@@ -26,7 +24,9 @@ font-family: 'gagalinregular';
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    width: 1100px;
+    width: rem(1100px);
+    padding-top: rem(15px);
+     
    
     
 }
@@ -36,8 +36,8 @@ font-family: 'gagalinregular';
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    margin-right: 30px;
-    margin-top: 40px;
+    margin-right: rem(30px);
+    margin-top: rem(40px);
         text-align: center;
      padding-bottom: 15%;
 }
@@ -57,12 +57,13 @@ font-size: rem(24px);
 .webest_reasons_descr{
     opacity: 0.8;
 font-family: 'ubunturegular';
-font-size: rem(14px);
-    margin-top: -12px;
+font-size: rem(15px);
+    margin-top: rem(-12px);
+    
    
     
 }
 
 .leaf_tytle{
-    letter-spacing: -0.6px;
+    letter-spacing: rem(-0.6px);
 }

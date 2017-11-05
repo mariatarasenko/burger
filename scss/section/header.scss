@@ -1,11 +1,10 @@
 header{
+    width: 100%;
     background-color: $black;
     background-image: url(../../burger/images/bg/bg_header.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    
-    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -14,93 +13,121 @@ header{
 .header_nav{
     margin-right: rem(75px);
     margin-top: rem(26px);
-      display: inline-flex;
+    display: inline-flex;
     flex-direction: row;
 }
+
 .header_nav_menu{
     margin-right: rem(13px);
 }
 
 .header_nav_logo{
     margin-right: auto;
-    padding-top: rem(12px);
+    padding-top:rem(12px);
     padding-left: rem(77px);
 }
 
 .header_menu{
     width: 100%;
-  display: inline-flex;
+    display: inline-flex;
     flex-direction: row;
     justify-content: space-between;
-
 }
+
 .nav_list{
-   margin: 0;
+   margin-top: rem(-2px);
     padding: 0;
 }
 
 .nav_name{
+        font-size: rem(48px);
     display: inline-block;
-vertical-align: middle;
-  white-space: nowrap;
-    
-    &:after{
+    vertical-align: middle;
+    white-space: nowrap;
+       &:after{
+        margin: 0 rem(10px);
         display: inline-block;
         vertical-align: middle;
         content:'';
         @include circle(5px, #fff); 
-        margin: 0 12px;
-    }
-    &:last-child:after {
-        display: none;
-    }
+                     }
+      &:last-child:after {
+          display: none;
+             }
 }
+
+.nav_buttom{
+    margin-top: rem(2px);
+}
+
 .nav_link{
  display: inline-block;
-  vertical-align: middle;
+ vertical-align: middle;
+}
+
+.burger_menu {
+  
+    border-top: 5px #fff solid;
+    border-bottom: 5px #fff solid;
+    width: rem(44px);
+    height: rem(24px);
+    cursor: pointer;
+    position: relative;
+    margin: rem(10px) auto 0;
+    margin-left: rem(20px);
+    display: none;
+    
+
+  
+    &:before {
+        content: '';
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        border-top: 5px #fff solid;
+        margin-top: rem(-3px);
+    }
+    
+    @include tablets{
+        display: block;
+    }
 }
 
 .wedo{
+   padding-bottom: rem(135px);
    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-grow: 1;
-    
-    padding-bottom: rem(135px);
-    
-    
-}
+   align-items: center;
+   justify-content: center;
+   flex-grow: 1;
+    }
 
 .wedo_pic{
     width: rem(421px);
-height: rem(420px);
+    height: rem(420px);
+}
 
-}
 .wedo_text{
+    margin-top: rem(160px);
+    margin-left: rem(-22px);
     text-align: center;
-    margin-top: 160px;
-    margin-left: -22px;
-    
 }
-.wedo_text_top{
-    font-family: 'gagalinregular';
-  font-size: rem(72px);
-    color: $yellow;
-   }
+
 
 .wedo_text_bottom{
-     font-family: 'lifehackmedium';
+    margin-top: rem(-13px);
+    margin-left:rem( 66px);
+    font-family: 'lifehackmedium';
     font-size: rem(65px);
     color: #fff;
     line-height: rem(85px);
     text-align: left;
-    margin-top: -13px;
-    margin-left: 66px;
-}
+    }
 
 .arrow{
     display: flex;
     justify-content: center;
-    margin-top: -43px;
-    padding-bottom: 43px; //я уверенна, что это ооочень неверно. обдумать это позже!!!
+    margin-top: rem(-129px);
+    padding-bottom: rem(43px); //я уверенна, что это ооочень неверно. обдумать это позже!!!
 }

@@ -1,0 +1,67 @@
+#map{
+    height: 100vh;
+    background-color: gray;
+    background-image: url(../../burger/images/find/bg-map.jpg) ;
+    background-position: bottom;
+    background-size: cover;
+    position: relative;
+    display: flex;    
+    }
+
+.main_map{
+     
+}
+
+.buttom{
+    height: 10%;
+    background-color: $black;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #fff;
+  }
+
+.buttom_left{
+    padding:  rem(12px)  0 rem(10px)   rem(30px) ;
+    display: flex;
+    flex-direction: column;
+    font-size:  rem(14px) ;
+    font-weight: 300;
+}
+
+.adres{
+    
+}
+.phone_number{
+  color: $orange ;
+  font-weight: 700; 
+}
+
+.buttom_right{
+   padding-top: rem(16px) ;
+}
+
+.app_icon{
+   
+    color:$gray;
+    &:hover{
+        color: #fff;
+    }
+}
+
+.icon_vk{
+   padding-right:  rem(20px) ; 
+}
+.icon_fb{
+   padding-right:  rem(20px)  ; 
+}
+.icon_ig{
+    padding-right:  rem(19px)  ;
+}
+.icon_tw{
+    padding-right:   rem(80px) ;
+}

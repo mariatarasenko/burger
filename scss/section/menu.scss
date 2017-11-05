@@ -1,0 +1,101 @@
+#menu {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../../burger/images/menu/menu.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    position: relative;
+}
+
+.global_tytle {
+    margin-left:rem(94px);
+ 
+    margin-top: rem(112px);
+  
+}
+
+.accordeon {
+    
+}
+
+.menu_parts {
+    display: flex;
+  flex-flow: row no-wrap;
+    align-items: flex-end;
+  max-width:60%;
+    position: absolute;
+    top: 0;
+    right: 0;
+        bottom: 0;
+}
+
+.menu_img{
+    height: 100vh; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    position: relative;
+     // display: flex;
+}
+
+
+.menu_tytle {
+   writing-mode:vertical-rl;
+    transform: scale(-1, -1);
+    color: #ffffff;
+font-family: 'gagalinregular';
+font-size:rem(42px);
+font-weight: 400;
+     text-align: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+  
+    //justify-content: center;
+   //align-items: center;
+}
+
+.menu_text {
+   background-color:  rgba(39, 39, 39, 0.84);
+      height: 100vh; 
+    color:#fff;
+  
+    font-family:'ubunturegular';
+     font-size:rem(14px);
+    font-weight: 300;
+    flex: 20%;
+    justify-content: center;
+    align-items: center;
+    }
+
+.menu_text_hidden{
+    width: 0;
+    display: none;
+}
+.menu_text_par{
+  
+}
+
+
+.meat {
+    @extend .menu_block;
+    background-image: url(../../burger/images/menu/meat1.jpg);
+   }
+
+.vege {
+    @extend .menu_block;
+    background-image:url(../../burger/images/menu/vege1.jpg);
+   
+ }
+
+.diet {
+     @extend .menu_block;
+    background-image:url(../../burger/images/menu/diet1.jpg);
+ 
+    }
+
+

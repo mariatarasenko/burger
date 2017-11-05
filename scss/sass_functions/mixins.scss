@@ -1,3 +1,9 @@
+
+//responsive
+@function rem($px) {
+    @return $px/16px+0rem ;
+}
+
 //mixin circle
 @mixin circle($width, $color) {
   width: $width;
@@ -6,7 +12,26 @@
   background-color: $color;
 }
 
-//responsive
-@function rem($px){
-    @return $px / 16px+0rem;
+//mixin tablets
+@mixin tablets{
+    @media screen and (max-width: $tablets){
+        @content;
+    }
 }
+
+//mixin phones
+@mixin mobile {
+  @media screen and (max-width: $mobile) {
+    @content;
+  }
+}
+
+//mixin small_mobile 
+
+@mixin small_mobile {
+  @media screen and (max-width: $small_mobile) {
+    @content;
+  }
+}
+
+

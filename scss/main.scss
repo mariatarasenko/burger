@@ -1,7 +1,8 @@
 // functions
-
-@import "sass_functions/var";
 @import "sass_functions/mixins";
+@import "sass_functions/var";
+
+@import "sass_functions/extends";
 
 //base
 
@@ -14,4 +15,8 @@
 @import "section/header";
 @import "section/webest";
 @import "section/reviews";
+@import "section/team";
+@import "section/menu";
+@import "section/forms";
+@import "section/map";
 

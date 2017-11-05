@@ -6,13 +6,13 @@
 
 .main_content{
     height: 100%;
-    min-height: 650px;
+    min-height:650px;
 }
 
 .container{
     width: 940px;
     margin: 0 auto;
-    display: flex;
+    display:flex;
     justify-content: center;
     align-items: center;
     
@@ -25,9 +25,9 @@
 }
 
 .order_buttom{
-    max-height: 38px; // не уверенна, что можно так делать
-    padding: 10px 17px ;
-    border-radius: 5px;
+    max-height:rem(38px); // не уверенна, что можно так делать
+    padding: rem(10px) rem(21px) ;
+    border-radius:rem(5px);
     background-color: $orange;
     font-size: rem(13px);
     line-height: 1.42;
@@ -39,33 +39,45 @@
 
 .main_links{
     position: fixed;
-    top:rem(88px);
+    top: rem(88px);
     right: rem(48px);
     
 }
 .main_links_one{
-    width: 20px;
-    height: 20px;
-    display: inline-block;
-    text-align: center;
+    width: rem(20px);
+    height: rem(20px);
     border: 2px solid transparent;
     border-radius: 50%;
-    line-height: 12px;
+    display: inline-block;
+    text-align: center;
+    line-height: rem(12px);
    
     
  &:after{
         display: inline-block;
         content:'';
-        @include circle(5px, #fff);
+        @include circle (5px, #fff);
       }
 
-    &:hover{ //пока что находится в стадии поиска ответа на вопрос "как это работает и почему у меня так а не как надо"
-       
-        border: 2px solid #fff;
+    &:hover{ 
+        border: rem(2px )solid #fff;
         
-        
-
-        
-        }
+      }
     
+}
+
+.tytle{
+    text-transform: uppercase;
+    font-family: 'gagalinregular';
+    font-size: rem(74px);
+    font-weight: 400;
+    &_yellow{
+        color:$yellow;
+    } 
+    &_black{
+        color:$black;
+    }
+    &_white{
+        color:#fff;
+    }
 }
