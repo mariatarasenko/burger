@@ -1,68 +1,74 @@
-#webest{
-    margin: 0;
-    padding: 0;
-    height: 100%;
+.webest{
     background-color: aliceblue;
     background-image:url(../../burger/images/bg/bg_webest.png);
     background-size: cover;
     background-repeat:no-repeat;
     background-position: center;
-    
-}
-
-.webest_content{
-    padding-top: rem(40px);
-   
+    display: flex;
+  align-items: center;
     }
 
-.webest_title{
+.webest_tytle{
     display: flex;
     justify-content: center;
+    margin-top: rem(80px);
 }
+
+.webest_reasons_logo_svg {
+  width: 90%;
+  height: rem(100px);
+     svg {
+    max-width: 95%;
+  }
+ }
 
 .webest_reasons{
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
-    width: rem(1100px);
-    padding-top: rem(15px);
+    //flex-wrap: nowrap;
+    //width: rem(1100px);
+   // padding-top: rem(15px);
      
-   
-    
+    @include mobile {
+    flex-direction: column;
+  }
 }
 
 .webest_reasons_one{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    margin-right: rem(30px);
-    margin-top: rem(40px);
+   //justify-content: space-between;
+    //align-items: center;
+   // margin-right: rem(30px);
+   // margin-top: rem(40px);
         text-align: center;
-     padding-bottom: 15%;
-}
-
-.webest_reason_logo{
-    width: rem(73px);
-height: rem(85px);
-    
+        margin-bottom: rem(50px);
+        padding: 0 rem(15px);
+     
+    @include mobile {
+    flex-direction: row;
+  }
 }
 
 .webest_reasons_tytle{
     font-family: 'lifehackmedium';
-font-size: rem(24px);
+    font-size: rem(24px);
     padding-top: rem(12px);
+    margin-bottom: rem(20px);
+}
+
+.webest_reasons_text{
+    @include mobile {
+    text-align: left;
+  }
 }
 
 .webest_reasons_descr{
     opacity: 0.8;
-font-family: 'ubunturegular';
-font-size: rem(15px);
+    font-family: 'ubunturegular';
+    font-size: rem(15px);
     margin-top: rem(-12px);
-    
-   
-    
-}
+    }
 
 .leaf_tytle{
     letter-spacing: rem(-0.6px);

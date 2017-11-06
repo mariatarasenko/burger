@@ -1,24 +1,32 @@
-#forms{
-    height: 100vh;
+.forms{
+   // height: 100vh;
     background-color:$gray;
     background-image: url(../images/bg/bg-forms.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    display: flex;
-    flex-direction: column;
+    //display: flex;
+   // flex-direction: column;
 }
 
 .form_tytle{
-    display: flex;
-    justify-content: center;
-    margin-top: rem(91px);
-    margin-bottom: rem(97px);
+    text-align: center;
+    margin-top: rem(61px);
+    margin-bottom: rem(87px);
+       
+        @include tablets{
+            margin-bottom: 0;
+            margin-top: 0;
+    }
 }
 
 .form_block_tytle{
-color: #fff;
-margin-bottom: rem(15px);
+    color: #fff;
+    margin-bottom: 3%;
+       
+        @include tablets{
+           margin-bottom: 1%; 
+    }
 }
 
 .form_input{
@@ -39,14 +47,23 @@ margin-bottom: rem(15px);
 }
 
 .form_content_part{
-    width: 70%;
-    margin: rem(20px);
-    flex: 1;
+    width: 45%;
+    margin-left: 5%;
+  
+    @include tablets{
+       width:100%;
+       margin-left: 0;
+    }
 }
 
-.form_content{
-    width: 90%;
-     display: flex;
+.form_content{  
+  display: flex;
+
+  @include tablets {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+  }
 }
 
 
@@ -69,8 +86,8 @@ margin-bottom: rem(15px);
 .dontcall{
     display: block;
     position: relative;
-  cursor: pointer;
-  user-select: none;
+    cursor: pointer;
+    user-select: none;
  
         input{
     position: absolute;
@@ -82,7 +99,7 @@ margin-bottom: rem(15px);
 .checkboxing{
     position: absolute;
     top: 0;
-   left:0;
+    left:0;
     width: 19px;
     height: 18px;
     background-color: #eee;
@@ -123,7 +140,7 @@ margin-bottom: rem(15px);
  
     margin-bottom: 12px;
     cursor: pointer;
-  user-select:none;
+    user-select:none;
 
 
  input {
@@ -156,7 +173,7 @@ margin-bottom: rem(15px);
 }
 
 .radio_buttons .checkradio:after {
- 	 	top: 5px;
+    top: 5px;
 	left: 5px;
     width: 8px;
 	height: 8px;

@@ -1,12 +1,3 @@
-#all_reviews{
-   margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    display: flex; 
-   
-}
-
 
 .reviews{
      height: 100%;
@@ -17,36 +8,37 @@
    
     
 }
+
 .one_review{
-    
-   width: 25%;
+    width: 25%;
     height: 50%;
-   background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  filter: grayscale(100%);  
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    filter: grayscale(100%);  
     position: relative;
+    
+    @include tablets{
+       width:50%;
+    }
 
 &:hover {
     .reviews_descr {
-      opacity: 1;
+        opacity: 1;
     }
   }
 }
 
 .reviews_descr {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(#454545, .7);
-  opacity: 0;
-  transition: opacity .3s;
+ //position: absolute;
+    background: rgba(#454545, .7);
+    opacity: 0;
+    transition: opacity .3s;
     padding-left: rem(21px);
     padding-right: rem(34px);
+    padding-bottom:  15%;
     text-align: left;
-}
+    }
 
 .reviews_descr_tytle{
     color: #ffffff;
@@ -54,12 +46,12 @@
     font-size: rem(14px);
     font-weight: 400;
     line-height: rem(28.11px);
-    margin-top: rem(51px);
-    padding-bottom: rem(30px);
+    padding-top: rem(30px);
+    padding-bottom: rem(50px);
 }
 
 .reviews_descr_text{
-   color: #ffffff;
+    color: #ffffff;
     font-size: rem(14px);
     font-weight: 300;
     line-height: rem(24px);
@@ -68,6 +60,7 @@
 
 .reviews_descr_butt{
     background-color: $black;
+    
     &:hover{
         background-color: darken($black,5%);
     }

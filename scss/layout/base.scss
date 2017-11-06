@@ -1,25 +1,56 @@
+html{
+ @include tablets {
+    font-size: 14px;
+  }
+
+  @include mobile {
+    font-size: 12px;
+  }
+}
+
+html,
+body {
+  height: 100%;
+}
+
 body{
-    margin: 0;
-    padding: 0;
-    font-size: 16px;
-    line-height: 1.5rem ;
+    font-size: rem(16px);
+    line-height:1.42 ;
+     -webkit-font-smoothing: antialiased;
     font-family: 'ubunturegular', Arial, sans-serif;
     color: $black;
+    position: relative;
     
 }
+.container {
+  margin: 0 auto;
+  //position: relative;
+  width: 95%;
+  max-width: 940px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  min-height: 100%;
+ overflow: hidden;
+}
+
+//tag style resets
 
 *, *::before, *::after { 
   box-sizing: border-box; 
 }
 
-body,html{
-    height: 100%;
-}
-
 ul{
     margin: 0;
     padding: 0;
-    list-style-type: none;
+    li{ 
+        list-style-type: none;
+    }
 }
 
 a{
@@ -27,4 +58,25 @@ a{
   text-transform: uppercase;
   text-decoration: none;
   color: #ffffff;
+}
+
+p{
+    margin: 0;
+    padding: 0;
+}
+
+
+table {
+ border-collapse: collapse;
+ border-spacing: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  font-weight: normal;
 }

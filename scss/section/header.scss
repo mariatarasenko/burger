@@ -1,25 +1,41 @@
-header{
-    width: 100%;
-    background-color: $black;
-    background-image: url(../../burger/images/bg/bg_header.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: flex;
+#header{
+   // width: 100%;
+	padding-top: rem(12px);
     justify-content: space-between;
-    align-items: center;
+	align-items: center;
+    display: flex;
+    
+      @include tablets{
+           margin-top: 5%;
+    }
 }
 
 .header_nav{
-    margin-right: rem(75px);
-    margin-top: rem(26px);
-    display: inline-flex;
-    flex-direction: row;
+   //margin-right: rem(75px);
+   // margin-top: rem(26px);
+   // display: inline-flex;
+    //flex-direction: row;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    }
+
+
+.header_links {
+  display: flex;
+  align-items: center;
 }
 
 .header_nav_menu{
     margin-right: rem(13px);
-}
+    flex: 1;
+	text-align: right;
+     
+    @include tablets{
+        display: none;
+    }
+    
+   }
 
 .header_nav_logo{
     margin-right: auto;
@@ -27,25 +43,23 @@ header{
     padding-left: rem(77px);
 }
 
-.header_menu{
-    width: 100%;
-    display: inline-flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
 .nav_list{
-   margin-top: rem(-2px);
-    padding: 0;
+   //margin-top: rem(-2px);
+   // padding: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+     
 }
 
 .nav_name{
         font-size: rem(48px);
-    display: inline-block;
-    vertical-align: middle;
+   // display: inline-block;
+   // vertical-align: middle;
     white-space: nowrap;
-       &:after{
-        margin: 0 rem(10px);
+       
+    &:after{
+        margin: 0 rem(12px);
         display: inline-block;
         vertical-align: middle;
         content:'';
@@ -53,11 +67,11 @@ header{
                      }
       &:last-child:after {
           display: none;
-             }
+    }
 }
 
 .nav_buttom{
-    margin-top: rem(2px);
+    //margin-top: rem(2px);
 }
 
 .nav_link{
@@ -95,39 +109,4 @@ header{
     }
 }
 
-.wedo{
-   padding-bottom: rem(135px);
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   flex-grow: 1;
-    }
 
-.wedo_pic{
-    width: rem(421px);
-    height: rem(420px);
-}
-
-.wedo_text{
-    margin-top: rem(160px);
-    margin-left: rem(-22px);
-    text-align: center;
-}
-
-
-.wedo_text_bottom{
-    margin-top: rem(-13px);
-    margin-left:rem( 66px);
-    font-family: 'lifehackmedium';
-    font-size: rem(65px);
-    color: #fff;
-    line-height: rem(85px);
-    text-align: left;
-    }
-
-.arrow{
-    display: flex;
-    justify-content: center;
-    margin-top: rem(-129px);
-    padding-bottom: rem(43px); //я уверенна, что это ооочень неверно. обдумать это позже!!!
-}
