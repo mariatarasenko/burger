@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      
     <meta name="viewport" content="width=device-width, initial-scale=1">
  <title>Document</title>
  <link rel="stylesheet" href="../burger/css/main.css">
@@ -16,7 +16,7 @@
           <div class="container">
     <header id="header">
       
-            <div class="header_nav_logo"><img src="../burger/images/logo/logo.png" alt="mr-burger" class="logo"></div>
+            <div class="header_nav_logo"><img src="../burger/images/logo/logo.png" alt="mr-burger" class="burger_logo"></div>
                
                    <div class="header_nav">
                    <div class="header_nav_menu">
@@ -48,23 +48,36 @@
                   <img src="../burger/images/content/burger.png" alt="burger"  class="wedo_pic_burger">
                </div> 
                <div class="part_wedo wedo_text">
-                   <div class="tytle tytle_yellow wedo_text_top">
+                   <h2 class="tytle tytle_yellow wedo_text_top">
                        мы делаем
-                   </div>
-                   <div class="wedo_text_bottom">
+                   </h2>
+                   <h3 class="wedo_text_bottom">
                        натуральные бургеры
-                   </div>
+                   </h3>
                </div>
                </div>
             </div>
         </div>
         <div class="arrow"><a href="#"> <img src="../burger/images/content/arrow-scroll.png" alt="arrow"> </a> </div>
   </section>
-   
+  <section class="burger_nav section">
+     <div class="close_icon"></div>
+      <ul class="burger_nav_list">
+          <li class="burger_nav_link"><a href="#">Почему мы</a></li><li class="circle"></li>
+          <li class="burger_nav_link"><a href="#">Меню</a></li><li class="circle"></li>
+          <li class="burger_nav_link"><a href="#">Советы
+ </a></li><li class="circle"></li>
+          <li class="burger_nav_link"><a href="#">Кто мы
+</a></li><li class="circle"></li>
+          <li class="burger_nav_link"><a href="#">Свяжитесь с нами
+</a></li><li class="circle"></li>
+          <li class="burger_nav_link"><a href="#">Контакты</a></li>
+      </ul>
+  </section>
    
     <section class="webest section" >
     <div class="container">
-      <div class="webest_tytle tytle tytle_black">мы лучшие</div>
+      <h3 class="webest_tytle tytle tytle_black">мы лучшие</h3>
        
         <div class="webest_reasons">
             <div class="webest_reasons_one">
@@ -101,9 +114,8 @@
         <section  class="section team">
         <div class="team_infopart">
             <div class="team_block">
-                <div class="team_title tytle tytle_yellow">команда</div>
+                <h3 class="team_title tytle tytle_yellow">команда</h3>
                 <div class="team_accordeon">
-                   
                    <div class="team_member">
                     <div class="team_link">
                     <div class="figure_hidden"></div>
@@ -271,44 +283,44 @@
      
      <section class="section forms">
    <div class="container">
-        <div class="form_tytle tytle tytle_yellow">Закажите доставку</div>
+        <h2 class="form_tytle tytle tytle_yellow">Закажите доставку</h2>
        
             <form action="" class="form_elem">
                 <div class="form_content">
                   <div class="form_content_part">
                    <div class="form_row">
                        <label  class="form_block">
-                           <div class="form_block_tytle">Имя</div>
+                           <span class="form_block_tytle">Имя</span >
                            <input type="text" class="form_input">
                        </label>
                        <label  class="form_block">
-                           <div class="form_block_tytle">Телефон</div>
+                           <span  class="form_block_tytle">Телефон</span >
                            <input type="text" class="form_input">
                        </label>
                    </div>
                    
                      <div class="form_row">
                        <label  class="form_block">
-                           <div class="form_block_tytle">Улица</div>
+                           <span  class="form_block_tytle">Улица</span >
                            <input type="text" class="form_input">
                        </label>
                     </div>
                     
                      <div class="form_row">
                        <label  class="form_block">
-                           <div class="form_block_tytle">Дом</div>
+                           <span  class="form_block_tytle">Дом</span >
                            <input type="text" class="form_input">
                        </label>
                        <label  class="form_block">
-                           <div class="form_block_tytle">Корпус</div>
+                           <span  class="form_block_tytle">Корпус</span >
                            <input type="text" class="form_input">
                        </label>
                        <label  class="form_block">
-                           <div class="form_block_tytle">Квартира</div>
+                           <span class="form_block_tytle">Квартира</span >
                            <input type="text" class="form_input">
                        </label>
                        <label  class="form_block">
-                           <div class="form_block_tytle">Этаж</div>
+                           <span  class="form_block_tytle">Этаж</span >
                            <input type="text" class="form_input">
                        </label>
                    </div>
@@ -316,7 +328,7 @@
                    <div class="form_content_part">
                     <div class="form_row">
                     <label  class="form_block">
-                   <div class="form_block_tytle">Комментарий</div>
+                   <span  class="form_block_tytle">Комментарий</span >
                    <textarea name="comments" class="form_input" cols="30" rows="6"></textarea>
                         </label>
                        </div>
@@ -325,14 +337,14 @@
                        
                          <div class="form_row radio_buttons">
                              <div class="radio_buttons_one">
-                          <label class="radio_buttons"><div class="form_block_tytle radio_tytle">Потребуется сдача</div>
+                          <label class="radio_buttons"><span class="form_block_tytle radio_tytle">Потребуется сдача</span>
   <input type="radio" checked="checked" name="radio">
   
   <span class="checkradio"></span>
 </label>
 </div>
  <div class="radio_buttons_one">
-<label class="radio_buttons"><div class="form_block_tytle radio_tytle">Оплата по карте</div>
+<label class="radio_buttons"><span class="form_block_tytle radio_tytle">Оплата по карте</span>
   <input type="radio" name="radio">
   <span class="checkradio"></span>
 </label>
@@ -341,7 +353,7 @@
                         </div>
                        
                         <div class="form_row">
-                       <label class="dontcall"> <div class="form_block_tytle radio_tytle">Не перезванивать</div>
+                       <label class="dontcall"> <span class="form_block_tytle radio_tytle">Не перезванивать</span >
                           <input type="checkbox" checked="checked">
                           <span class="checkboxing"></span>
                          </label>

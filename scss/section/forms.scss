@@ -22,10 +22,10 @@
 
 .form_block_tytle{
     color: #fff;
-    margin-bottom: 3%;
+    //margin-bottom: rem(50px);
        
         @include tablets{
-           margin-bottom: 1%; 
+          // margin-bottom: 4%; 
     }
 }
 
@@ -34,6 +34,10 @@
     border-radius: rem(5px);
     padding: rem(9px) rem(16px);
     width: 100%;
+    margin-top: rem(10px);
+      @include tablets{
+          margin-top: 0;
+    }
 }
 
 .form_row{

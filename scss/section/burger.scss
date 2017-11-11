@@ -15,18 +15,7 @@
    // }
     }
 
-.wedo_content {
-    display: flex;
-  
-  @include tablets {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 0 20%;
-  }
-}
-
-.hero__container {
+.wedo__container {
   display: flex;
   flex: 1;
   flex-direction: column;
@@ -34,6 +23,17 @@
   padding-bottom: 15%;
 }
 
+.wedo_content {
+   
+    display: flex;
+    
+  @include tablets {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    //padding: 0 20%;
+  }
+}
 
 .part_wedo{
    
@@ -42,11 +42,12 @@
     @include tablets{
          width: 90%;
     }
-    
 }
+
 .wedo_pic{
    //min-width: 70%; 
 }
+
 .wedo_pic_burger{
   display: inline-block;
   position: relative;
