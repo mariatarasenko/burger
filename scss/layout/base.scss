@@ -1,6 +1,6 @@
 html{
  @include tablets {
-    font-size: 14px;
+    font-size: 13px;
   }
 
   @include mobile {
@@ -24,7 +24,6 @@ body{
 }
 .container {
   margin: 0 auto;
-  //position: relative;
   width: 95%;
   max-width: 940px;
   display: flex;

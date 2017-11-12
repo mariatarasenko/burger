@@ -1,18 +1,16 @@
 .forms{
-   // height: 100vh;
     background-color:$gray;
     background-image: url(../images/bg/bg-forms.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    //display: flex;
-   // flex-direction: column;
 }
 
 .form_tytle{
     text-align: center;
     margin-top: rem(61px);
     margin-bottom: rem(87px);
+    margin-bottom: rem(12px);
        
         @include tablets{
             margin-bottom: 0;
@@ -22,12 +20,7 @@
 
 .form_block_tytle{
     color: #fff;
-    //margin-bottom: rem(50px);
-       
-        @include tablets{
-          // margin-bottom: 4%; 
-    }
-}
+     }
 
 .form_input{
     border: none;

@@ -33,7 +33,7 @@
 }
 
 .team_title{
-  //margin-bottom: 12%;
+ 
    }
 
 .team_accordeon{
@@ -51,7 +51,6 @@
 .team_link{
    display: inline-flex;
     font-size: rem(14px);
-    //margin-top: rem(35px);
     @include tablets() {
     font-size: rem(25px);
   }

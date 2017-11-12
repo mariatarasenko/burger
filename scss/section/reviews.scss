@@ -4,10 +4,7 @@
      width: 100%;
     display: flex; 
      flex-wrap: wrap;
-    
-   
-    
-}
+    }
 
 .one_review{
     width: 25%;
@@ -30,7 +27,6 @@
 }
 
 .reviews_descr {
- //position: absolute;
     background: rgba(#454545, .7);
     opacity: 0;
     transition: opacity .3s;

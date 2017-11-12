@@ -19,6 +19,14 @@
     }
 }
 
+//mixin medium tablets
+@mixin medium_tablets{
+    @media screen and (max-width: $medium_tablets){
+        @content;
+    }
+}
+
+
 //mixin phones
 @mixin mobile {
   @media screen and (max-width: $mobile) {
