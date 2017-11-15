@@ -35,12 +35,12 @@
                  <div class="header_links">
                     <a href="#" class="nav_buttom order_buttom">Заказать</a>   
                   <a class="burger_menu_link" href="" >
-                    <div class="burger_menu" onClick="showMenu(event)"></div>  
+                    <div class="burger_menu"></div>  
                   
                    </a>   
                    </div> 
         </div>
-       
+      
        </header>
      
             <div class="wedo_container">
@@ -61,8 +61,8 @@
         </div>
         <div class="arrow"><a href="#"> <img src="../burger/images/content/arrow-scroll.png" alt="arrow"> </a> </div>
   </section>
-  <section class="burger_nav section">
-     <a href="#" class="close_icon" onclick="hideMenu(event)"></a>
+  <section class="burger_nav_hidden section">
+     <a href="#" class="close_icon" ></a>
       <ul class="burger_nav_list">
           <li class="burger_nav_link"><a href="#">Почему мы</a></li><li class="circle"></li>
           <li class="burger_nav_link"><a href="#">Меню</a></li><li class="circle"></li>
@@ -124,7 +124,7 @@
     
     
    <div class="container_slider">
-      <a href="#"  class="scroll"> <img src="images/slider/arrow-scroll.png" alt="scroll scroll_left" ></a>
+      <a href="#"  class="scroll"> <img src="images/slider/arrow-scroll.png" alt="scroll scroll_left" class="scroll_bigger" ></a>
        <ul class="slider_content">
        
            <li class="slider_content_slide">
@@ -141,7 +141,7 @@
            </li>
           
        </ul> 
-          <a href="#" class="scroll"> <img src="images/slider/arrow-scroll-right.png" alt="scroll_right"  ></a>
+          <a href="#" class="scroll"> <img src="images/slider/arrow-scroll-right.png" alt="scroll_right" class="scroll_bigger" ></a>
         
                   
                    
@@ -462,6 +462,7 @@
     
        </div>
    </div>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
    <script src="./js/menu.js"  > </script>
    <link rel="stylesheet" href="../burger/css/normalize.css"> 
      

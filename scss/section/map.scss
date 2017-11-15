@@ -42,7 +42,7 @@
         
      @include mobile{
         padding-top: rem(5px);
-        
+        font-size:  rem(12px) ;
     }
 }
 
@@ -67,7 +67,7 @@
 
 .app_icon{
      color:$gray;
-        
+     margin: rem(5px);   
         &:hover{
           color: #fff;
             }

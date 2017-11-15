@@ -9,6 +9,7 @@
 .one_review{
     width: 25%;
     height: 50%;
+  
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -17,23 +18,35 @@
     
     @include tablets{
        width:50%;
+       min-height: 200px;
     }
+    
+     
 
-&:hover {
+&:hover,
+&:active{
     .reviews_descr {
         opacity: 1;
+        
     }
   }
 }
 
 .reviews_descr {
     background: rgba(#454545, .7);
+    min-height: 200px;
     opacity: 0;
     transition: opacity .3s;
     padding-left: rem(21px);
     padding-right: rem(34px);
     padding-bottom:  15%;
     text-align: left;
+    
+    
+  //  @include mobile {
+  //   min-height: 100%;
+  //      
+   // }
     }
 
 .reviews_descr_tytle{
@@ -44,6 +57,13 @@
     line-height: rem(28.11px);
     padding-top: rem(30px);
     padding-bottom: rem(50px);
+    
+    @include mobile {
+      padding-bottom: rem(20px);
+      font-size: rem(28px);
+      text-align: center;
+        
+    } 
 }
 
 .reviews_descr_text{
@@ -52,10 +72,29 @@
     font-weight: 300;
     line-height: rem(24px);
     padding-bottom: rem(15px);
+    display: block;
+    
+    @include mobile {
+      display: none;
+        
+    }  
 }
 
 .reviews_descr_butt{
     background-color: $black;
+   // display:flex  ;
+   // justify-content:center ;
+    max-width: 110px;
+
+    @include tablets{
+        margin: 0 25%;
+    }
+
+    @include small_mobile{
+        margin: 0 ;
+      
+    }
+  
     
     &:hover{
         background-color: darken($black,5%);

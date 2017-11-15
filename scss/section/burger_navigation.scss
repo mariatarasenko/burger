@@ -6,8 +6,12 @@
     width: 100vw;
     height: 100%;
     z-index: 8;
-   // &_hidden{
-    display: none;//}
+    transition: all 1s ;
+    display:block;
+   
+    &_hidden{
+    display: none;
+   }
     
 }
 .burger_nav_list{

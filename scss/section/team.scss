@@ -83,6 +83,7 @@
     align-items: center;
     color:#fff;
     width: rem(331px);
+    height: 200px;
     
         @include tablets() {
             flex-direction: column;
