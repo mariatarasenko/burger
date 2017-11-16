@@ -82,17 +82,20 @@
 
 .reviews_descr_butt{
     background-color: $black;
-   // display:flex  ;
+   display:flex  ;
+   flex-wrap:nowrap; 
    // justify-content:center ;
-    max-width: 110px;
+    max-width: 120px;
+   
 
     @include tablets{
         margin: 0 25%;
     }
 
     @include small_mobile{
-        margin: 0 ;
-      
+        margin-left: 15%;
+        font-size: rem(10px);
+        max-height: 80px;
     }
   
     
