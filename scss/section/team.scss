@@ -56,12 +56,12 @@
   }
     }
 
-.figure_hidden{
+    .figure_hidden{
     @extend .figure;
     
 }
 
-.figure_visible{
+.active .figure_hidden{
     @extend .figure;
      border-top: none;
      border-bottom: 12px solid $yellow;
@@ -72,7 +72,7 @@
     color: #ffffff;
   }
 
-.team_activename{
+.active .team_name{
     @extend .name;
     color: $yellow; 
 }
@@ -83,10 +83,10 @@
     align-items: center;
     color:#fff;
     width: rem(331px);
-    //display: none;
+    display: none;
     transition: all 2s; 
-     height:0;
-     overflow: hidden;
+    //  height:0;
+    //  overflow: hidden;
     
         @include tablets() {
             flex-direction: column;
@@ -95,11 +95,11 @@
     
 }
 
-.team_info_active{
-    // height:auto;
-    // overflow: visible;
-    display:block;  
-}
+// .team_info_active{
+//     // height:auto;
+//     // overflow: visible;
+//     display:block;  
+// }
 
 
 
@@ -139,7 +139,7 @@
     line-height: rem(24px); 
 }
 
-.active{
+.active .team_info{
 display:block;
 
 }

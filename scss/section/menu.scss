@@ -53,14 +53,21 @@
 
 .menu_content{
     overflow: hidden;
-    display: flex; 
+    display: flex;
+    
 }
 
-.menu_content_active .menu_text_par{
+.menu_content_active .menu_text_par {
     max-width: 540px;
     opacity: 1;
     visibility: visible;
     padding: 60px 35px;
+    transition:  all 3s;
+    // display: block;
+   
+}
+.menu_content_active .menu_tytle{
+    color: $yellow;
 }
 
 .menu_img{
@@ -116,37 +123,12 @@
     font-weight: 300;
     box-sizing: border-box;
     opacity: 0;
-    visibility: hidden;
-    max-width: 0;
-    display: block;
+   visibility: hidden;
+  max-width: 0;
+    // display: none;
     padding: 0;
     width: 100%;
     }
-
-    .active{
-    display: block;
-}
-
-
-
-// .meat {
-//     @extend .menu_block;
-// //-image: url(../../burger/images/menu/meat1.jpg);
-//    }
-
-// .vege {
-//     @extend .menu_block;
-//     //background-image:url(../../burger/images/menu/vege1.jpg);
-   
-//  }
-
-// .diet {
-//      @extend .menu_block;
-//    // background-image:url(../../burger/images/menu/diet1.jpg);
- 
-//     }
-
-    
 
 
 
