@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
      
  <title>Document</title>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.6/css/swiper.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" >
  <link rel="stylesheet" href="../burger/css/main.css">
 </head>
 
@@ -123,11 +125,16 @@
     
     
     
-   <div class="container_slider">
-      <a href="#"  class="scroll"> <img src="images/slider/arrow-scroll.png" alt="scroll scroll_left" class="scroll_bigger" ></a>
-       <ul class="slider_content">
+   <div class="container_slider ">
+      <a href="#"  class="scroll swiper-button-prev"> <img src="images/slider/arrow-scroll.png" alt="scroll scroll_left" class="scroll_bigger" ></a>
+      
+      
+      
+      <div class="swiper-container">
+            <div class="swiper-wrapper">
+      <!-- <ul class="slider_content"> -->
        
-           <li class="slider_content_slide">
+           <div class="slider_content_slide swiper-slide">
               
                <div class="content_picture"><img src="images/slider/burger.png" alt="burger" class="content_picture_jpg"></div>
                <div class="content_desc">
@@ -138,16 +145,82 @@
                    <div class="tytle tytle_orange value">рублей</div>
                    <a href="#" class="order_buttom ">Заказать</a>
                </div></div>
-           </li>
+           </div>
+
+             
+           <div class="slider_content_slide swiper-slide">
+                
+                 <div class="content_picture"><img src="images/burgers-slider/burger_sandwich_PNG4124.png" alt="burger" class="content_picture_jpg"></div>
+                 <div class="content_desc">
+                  <h3 class="tytle tytle_white slider_tytle">Dark BEEF <br> Burger</h3>
+                 <p class="slider_desc">Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.</p>
+                 <div class="slider_order">
+                     <div class="tytle tytle_orange price">500</div>
+                     <div class="tytle tytle_orange value">рублей</div>
+                     <a href="#" class="order_buttom ">Заказать</a>
+                 </div></div>
+             </div>
           
-       </ul> 
-          <a href="#" class="scroll"> <img src="images/slider/arrow-scroll-right.png" alt="scroll_right" class="scroll_bigger" ></a>
+             <div class="slider_content_slide swiper-slide">
+                    
+                     <div class="content_picture"><img src="images/burgers-slider/Chiken burger.png" alt="burger" class="content_picture_jpg"></div>
+                     <div class="content_desc">
+                      <h3 class="tytle tytle_white slider_tytle">Dark BEEF <br> Burger</h3>
+                     <p class="slider_desc">Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.</p>
+                     <div class="slider_order">
+                         <div class="tytle tytle_orange price">500</div>
+                         <div class="tytle tytle_orange value">рублей</div>
+                         <a href="#" class="order_buttom ">Заказать</a>
+                     </div></div>
+                 </div>
+
+                 <div class="slider_content_slide swiper-slide">
+                        
+                         <div class="content_picture"><img src="images/burgers-slider/NYC-Diner-Bacon-Cheeseburger.png" alt="burger" class="content_picture_jpg"></div>
+                         <div class="content_desc">
+                          <h3 class="tytle tytle_white slider_tytle">Dark BEEF <br> Burger</h3>
+                         <p class="slider_desc">Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.</p>
+                         <div class="slider_order">
+                             <div class="tytle tytle_orange price">500</div>
+                             <div class="tytle tytle_orange value">рублей</div>
+                             <a href="#" class="order_buttom ">Заказать</a>
+                         </div></div>
+                     </div>
+
+
+                     <div class="slider_content_slide swiper-slide">
+                            
+                             <div class="content_picture"><img src="images/burgers-slider/Spicy_Shrimp_Burger.png" alt="burger" class="content_picture_jpg"></div>
+                             <div class="content_desc">
+                              <h3 class="tytle tytle_white slider_tytle">Dark BEEF <br> Burger</h3>
+                             <p class="slider_desc">Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.</p>
+                             <div class="slider_order">
+                                 <div class="tytle tytle_orange price">500</div>
+                                 <div class="tytle tytle_orange value">рублей</div>
+                                 <a href="#" class="order_buttom ">Заказать</a>
+                             </div></div>
+                         </div>
+       <!-- </ul> -->
+       </div> 
+    </div>
+       
+       
+       
+       
+       
+       
+       <a href="#" class="scroll swiper-button-next"> <img src="images/slider/arrow-scroll-right.png" alt="scroll_right" class="scroll_bigger" ></a>
         
                   
                    
-                     <div class="kkal_picture"><p class="kkal_text">1200</p> <svg  class="svg_kkal"   >
-                   <use xlink:href="sprite/sprite.svg#kkal" fill="#fff" />
-               </svg>
+                    
+          
+          
+          
+          
+          <div class="kkal_picture"><p class="kkal_text">1200</p> <svg  class="svg_kkal"   >
+         <use xlink:href="sprite/sprite.svg#kkal" fill="#fff" />
+        </svg>
         <p class="kkal_text_value">ккал</p> </div>
         </div> 
    
@@ -259,7 +332,7 @@
                       
                     </div>
                 </li>
-                <li class="menu_content menu_content_active">
+                <li class="menu_content active">
             <h3 class=" menu_img vege" style="background-image: url('images/menu/vege1.jpg');">
             <span class="menu_tytle ">вегетарианское</span></h3>
             <div class="menu_text_par">
@@ -286,7 +359,7 @@
                 <div class="reviews_descr" >
                 <h4 class="reviews_descr_tytle">Константин Спилберг</h4>
                 <p class="reviews_descr_text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
-                <a href="#" class="reviews_descr_butt order_buttom">Подробнее</a> 
+                <a class="reviews_descr_butt order_buttom" data-fancybox data-src="#hidden-content" > Подробнее </a> 
                 
                 </div></li>
                 
@@ -295,7 +368,7 @@
                 <div class="reviews_descr" >
                 <h4 class="reviews_descr_tytle">Константин Спилберг</h4>
                 <p class="reviews_descr_text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
-                <a href="#" class="reviews_descr_butt order_buttom">Подробнее</a> 
+                <a class="reviews_descr_butt order_buttom" data-fancybox data-src="#hidden-content" > Подробнее </a> 
                 
                 </div></li>
                 
@@ -304,7 +377,7 @@
                 <div class="reviews_descr" >
                 <h4 class="reviews_descr_tytle">Константин Спилберг</h4>
                 <p class="reviews_descr_text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
-                <a href="#" class="reviews_descr_butt order_buttom">Подробнее</a> 
+                <a class="reviews_descr_butt order_buttom" data-fancybox data-src="#hidden-content" > Подробнее </a> 
                 
                 </div></li>
                 
@@ -313,7 +386,7 @@
                 <div class="reviews_descr" >
                 <h4 class="reviews_descr_tytle">Константин Спилберг</h4>
                 <p class="reviews_descr_text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
-                <a href="#" class="reviews_descr_butt order_buttom">Подробнее</a> 
+                <a class="reviews_descr_butt order_buttom" data-fancybox data-src="#hidden-content" > Подробнее </a>  
                 
                 </div></li>
                 
@@ -322,7 +395,7 @@
                 <div class="reviews_descr" >
                 <h4 class="reviews_descr_tytle">Константин Спилберг</h4>
                 <p class="reviews_descr_text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
-                <a href="#" class="reviews_descr_butt order_buttom">Подробнее</a> 
+                <a class="reviews_descr_butt order_buttom" data-fancybox data-src="#hidden-content" > Подробнее </a> 
                 
                 </div></li>
                 
@@ -331,7 +404,7 @@
                 <div class="reviews_descr" >
                 <h4 class="reviews_descr_tytle">Константин Спилберг</h4>
                 <p class="reviews_descr_text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
-                <a href="#" class="reviews_descr_butt order_buttom">Подробнее</a> 
+                <a class="reviews_descr_butt order_buttom" data-fancybox data-src="#hidden-content" > Подробнее </a> 
                 
                 </div></li>
                 
@@ -340,7 +413,7 @@
                 <div class="reviews_descr" >
                 <h4 class="reviews_descr_tytle">Константин Спилберг</h4>
                 <p class="reviews_descr_text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
-                <a href="#" class="reviews_descr_butt order_buttom">Подробнее</a> 
+                <a class="reviews_descr_butt order_buttom" data-fancybox data-src="#hidden-content" > Подробнее </a> 
                 
                 </div></li>
                 
@@ -349,7 +422,7 @@
                 <div class="reviews_descr" >
                 <h4 class="reviews_descr_tytle">Константин Спилберг</h4>
                 <p class="reviews_descr_text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
-                <a href="#" class="reviews_descr_butt order_buttom">Подробнее</a> 
+                <a class="reviews_descr_butt order_buttom" data-fancybox data-src="#hidden-content" > Подробнее </a> 
                 
                 </div></li>    
                 
@@ -480,6 +553,13 @@
             </div>
         </div>
     </footer>
+    <div class="rew_popup" id="hidden-content">
+            <h2>Константин Спилберг</h2>
+            <p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... 
+                Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным. 
+                Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть..
+                . Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
+        </div>
     <div class="main_links">
             <ul>
                 <li><a  class="main_links_one" href="#header" >    </a></li>
@@ -496,6 +576,10 @@
        </div>
    </div>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.6/js/swiper.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>
+   <script src="./js/popup.js"></script>
+   <script src="./js/slider.js"></script>
    <script src="./js/menu.js"  > </script>
    <link rel="stylesheet" href="../burger/css/normalize.css"> 
      

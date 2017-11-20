@@ -11,7 +11,12 @@
   border-radius: $width/2;
   background-color: $color;
 }
-
+//mixin big tablets 
+@mixin big_tablets{
+  @media screen and (max-width: $big_tablets){
+      @content;
+  }
+}
 //mixin tablets
 @mixin tablets{
     @media screen and (max-width: $tablets){

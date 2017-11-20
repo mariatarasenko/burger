@@ -85,6 +85,8 @@
    display:flex  ;
    flex-wrap:nowrap; 
     max-width: 120px;
+    padding: 5%;
+    font-size: rem(12px);
    
 
     @include tablets{
@@ -94,11 +96,24 @@
     @include small_mobile{
         margin-left: 15%;
         font-size: rem(10px);
-        min-height: 120px;
+        min-height: 20%;
     }
   
     
     &:hover{
         background-color: darken($black,5%);
     }
+}
+
+.rew_popup{
+    display: none;
+}
+
+.fancybox-slide > *{
+    max-width: 70%;
+    border-radius:8px;
+}
+.fancybox-close-small:after{
+    color:rgba(#e45028 , 0.7);
+   
 }
