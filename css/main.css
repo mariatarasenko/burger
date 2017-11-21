@@ -860,9 +860,6 @@ h6 {
   -webkit-transition: color 2s;
   -o-transition: color 2s;
   transition: color 2s; }
-  @media screen and (max-width: 390px) {
-    .menu_tytle {
-      padding: 0.9375rem; } }
 
 .active .menu_text_par {
   padding: 3.75rem 2.1875rem;
@@ -1080,10 +1077,8 @@ h6 {
 
 #map {
   height: 100vh;
+  width: 100%;
   background-color: gray;
-  background-image: url(../../burger/images/find/bg-map.jpg);
-  background-position: bottom;
-  background-size: cover;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1290,11 +1285,10 @@ h6 {
   margin-bottom: 3.125rem;
   line-height: 4rem; }
 
-.slider_content {
+.slider_content_item {
   margin: 0 auto;
   width: 100%;
-  max-width: 940px;
-  padding-left: 2.9375rem; }
+  max-width: 940px; }
 
 .slider_content_slide {
   width: 100%;
@@ -1319,6 +1313,16 @@ h6 {
       -ms-flex-direction: column;
       flex-direction: column;
       text-align: center; } }
+
+.scroll_button_prev {
+  position: absolute;
+  top: 25%;
+  left: 5%; }
+
+.scroll_button_next {
+  position: absolute;
+  top: 25%;
+  right: 5%; }
 
 .content_picture_jpg {
   max-width: 25rem; }

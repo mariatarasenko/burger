@@ -90,9 +90,9 @@
    transition: color 2s;
 
 
-     @include small_mobile() {
-        padding: rem(15px);
-     }
+    //  @include small_mobile() {
+    //     padding: rem(15px);
+    //  }
 }
 
 
