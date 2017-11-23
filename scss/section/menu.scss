@@ -1,6 +1,6 @@
 #menu {
     //width: 100%;
-    min-height: 100vh;
+  
     background-image: url(../../burger/images/menu/menu.jpg);
     background-size: cover;
     background-position: center;
@@ -22,14 +22,28 @@
     z-index: 1;
     font-size: rem(72px);
 
-     @include tablets() {
+    @include big_tablets() {
+        position: absolute;
+        right: 75%;
+        top: 43px;
+    } 
+
+    @include tablets() {
+        
         margin-left:rem(34px);
         margin-top: rem(32px);
         z-index: 0;
 }
-    @include mobile() {  
-        font-size: rem(60px);
-        margin-left:rem(14px);
+
+@include medium-tablets() {
+    position: absolute;
+    right: 70%;
+    top: 43px;
+} 
+
+    @include mobile() { 
+        
+        
      
 }
       
@@ -60,7 +74,7 @@
 }
 
 .menu_img{
-    height: 100vh; 
+    height: 100%; 
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -90,9 +104,9 @@
    transition: color 2s;
 
 
-    //  @include small_mobile() {
-    //     padding: rem(15px);
-    //  }
+    //   @include mobile() {
+    //      padding: rem(15px);
+    //   }
 }
 
 
@@ -112,7 +126,7 @@
 
  .menu_text_par {
    background-color:  rgba(39, 39, 39, 0.84);
-    height: 100vh; 
+    height: 100%; 
     color:#fff;
     font-family:'ubunturegular';
     font-size:rem(14px);

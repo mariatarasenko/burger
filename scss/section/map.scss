@@ -1,25 +1,26 @@
 #map{
-    height: 100vh;
     width:100%;
     background-color: gray;
    // background-image: url(../../burger/images/find/bg-map.jpg) ;
     // background-position: bottom;
     // background-size: cover;
-    position: relative;
+    // position: relative;
     display: flex;    
     }
 
-.main_map{
-     
-}
 
+
+.footer{
+    position: relative; 
+}
 .buttom{
-    height: 10%;
+    height: rem(60px);
     background-color: $black;
     position: absolute;
     bottom: 0;
     left: 0;
-    right: 0;    
+    right: 0;  
+    z-index: 10;
     display: flex;
     flex-direction: row;
     justify-content: space-between;

@@ -1,21 +1,20 @@
-//.wrapper{
-   // width: 100%;
-   // min-height: 100%;
-    //overflow: hidden;
-     //    position: relative;
-   
-//}
-
 .main_content{
     height: 100%;
-    min-height:650px;
+    min-height: 650px;
+    transition: 1s;
+    will-change: transform;
+    transform: translateZ(0);//выносим все на отдельный компонентный слой  
+ @include tablets(){
+     min-height: auto;
+ }
 }
 
 .section{
-    height: 100vh;
+  height: 100%;
     min-height: rem(650px);
     display: flex;
     overflow: hidden;
+    position: relative;
 }
 
 .order_buttom{
@@ -32,35 +31,68 @@
     }
 }
 
-.main_links{
+.main_links_list{
     position: fixed;
     z-index: 20 ;
     top: rem(88px);
     right: rem(48px);
     
-}
-.main_links_one{
-    width: rem(20px);
-    height: rem(20px);
-    border: 2px solid transparent;
-    border-radius: 50%;
-    display: inline-block;
-    text-align: center;
-    line-height: rem(12px);
-    margin-top: -5px;
-   
-    
- &:after{
-        display: inline-block;
-        content:'';
-        @include circle (5px, #fff);
-      }
+ }
 
-    &:hover{ 
-        border: rem(2px )solid #fff;
-        
-      }
-    
+.main_links_link {
+	width: rem(20px);
+	height: rem(20px);
+	display: block;
+	position: relative;
+
+	&:after, &:before {
+		content: "";
+		display: block;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		border-radius: 50%;
+	}
+
+	&:after {
+		width: rem(6px);
+		height: rem(6px);
+		background: #fff;
+	}
+
+	&:before {
+		width: rem(0px);
+		height: rem(0px);
+		border-radius: 50%;
+		border: rem(2px) solid #fff;
+		opacity: 0;
+		transition: .3s;
+	}
+
+	&:hover {
+		&:before {
+			width: rem(20px);
+			height: rem(20px);
+			opacity: 1;
+		}
+	}
+}
+
+.main_links_item {
+	&.active {
+		.main_links_link {
+			&:before {
+				width: rem(20px);
+				height: rem(20px);
+				opacity: 1;
+			}
+		}
+	}
+}
+
+.main_links_item {
+	margin-bottom: rem(5px);
 }
 
 .tytle{
