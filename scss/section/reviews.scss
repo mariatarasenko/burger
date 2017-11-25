@@ -32,7 +32,7 @@
 
 .reviews_descr {
     background: rgba(#454545, .7);
-    min-height: rem(200px);
+    height: 100%;
     opacity: 0;
     transition: opacity .3s;
     padding-left: rem(21px);
@@ -41,7 +41,7 @@
     text-align: left;
 
     @include big_tablets{
-      height: 100%;
+    
       
     }
     @include tablets{
@@ -49,11 +49,7 @@
         text-align: center;
       }
     
-    
-  //  @include mobile {
-  //   min-height: 100%;
-  //      
-   // }
+
     }
 
 .reviews_descr_tytle{

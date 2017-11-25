@@ -785,7 +785,7 @@ h6 {
 
 .reviews_descr {
   background: rgba(69, 69, 69, 0.7);
-  min-height: 12.5rem;
+  height: 100%;
   opacity: 0;
   -webkit-transition: opacity .3s;
   -o-transition: opacity .3s;
@@ -794,9 +794,6 @@ h6 {
   padding-right: 2.125rem;
   padding-bottom: 15%;
   text-align: left; }
-  @media screen and (max-width: 1100px) {
-    .reviews_descr {
-      height: 100%; } }
   @media screen and (max-width: 768px) {
     .reviews_descr {
       text-align: center; } }
