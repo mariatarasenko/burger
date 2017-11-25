@@ -32,18 +32,19 @@
         
         margin-left:rem(34px);
         margin-top: rem(32px);
+        right: 70%;
         z-index: 0;
 }
 
 @include medium-tablets() {
     position: absolute;
-    right: 70%;
+    right: 60%;
     top: rem(43px);
 } 
 
     @include mobile() { 
-        
-        
+        font-size: rem(64px);
+          
      
 }
       

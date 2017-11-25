@@ -1064,12 +1064,16 @@ h6 {
     .global_tytle {
       margin-left: 2.125rem;
       margin-top: 2rem;
+      right: 70%;
       z-index: 0; } }
   @media screen and (max-width: 643px) {
     .global_tytle {
       position: absolute;
-      right: 70%;
+      right: 60%;
       top: 2.6875rem; } }
+  @media screen and (max-width: 480px) {
+    .global_tytle {
+      font-size: 4rem; } }
 
 .menu_parts {
   display: -webkit-box;
@@ -1349,6 +1353,9 @@ h6 {
   text-transform: none;
   font-size: 0.875rem; }
 
+.ordering_button {
+  display: none; }
+
 .our_map {
   width: 100%;
   max-height: 91%;
@@ -1358,6 +1365,9 @@ h6 {
   @media screen and (max-width: 768px) {
     .our_map {
       max-height: 93%; } }
+  @media screen and (max-width: 768px) {
+    .our_map {
+      max-height: 91%; } }
 
 .footer {
   max-height: 8%; }
@@ -1399,7 +1409,8 @@ h6 {
       -webkit-align-items: center;
       -ms-flex-align: center;
       align-items: center;
-      text-align: center; } }
+      text-align: center;
+      height: 10%; } }
 
 .buttom_left {
   padding: 0.75rem 0 0.625rem 1.875rem;
@@ -1427,8 +1438,8 @@ h6 {
   padding-top: 1rem; }
   @media screen and (max-width: 480px) {
     .buttom_right {
-      margin-left: 10%;
-      margin-top: -2%;
+      margin-left: 20%;
+      margin-top: -10%;
       padding-top: 0;
       -webkit-box-pack: center;
       -webkit-justify-content: center;

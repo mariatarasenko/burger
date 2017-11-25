@@ -52,15 +52,15 @@ Mr. Burger</title>
        <section class="burger_nav_hidden ">
         
           <ul class="burger_nav_list">
-              <li class="burger_nav_link"><a href="#">Почему мы</a></li><li class="circle"></li>
-              <li class="burger_nav_link"><a href="#">Меню</a></li><li class="circle"></li>
-              <li class="burger_nav_link"><a href="#">Советы
+              <li class="burger_nav_link"><a href="#" data-scroll-to="1">Почему мы</a></li><li class="circle"></li>
+              <li class="burger_nav_link"><a href="#" data-scroll-to="4">Меню</a></li><li class="circle"></li>
+              <li class="burger_nav_link"><a href="#" data-scroll-to="2">Советы
      </a></li><li class="circle"></li>
-              <li class="burger_nav_link"><a href="#">Кто мы
+              <li class="burger_nav_link"><a href="#" data-scroll-to="3">Кто мы
     </a></li><li class="circle"></li>
-              <li class="burger_nav_link"><a href="#">Свяжитесь с нами
+              <li class="burger_nav_link"><a href="#" data-scroll-to="6">Свяжитесь с нами
     </a></li><li class="circle"></li>
-              <li class="burger_nav_link"><a href="#">Контакты</a></li>
+              <li class="burger_nav_link"><a href="#" data-scroll-to="7">Контакты</a></li>
           </ul>
       </section>
 
@@ -760,49 +760,49 @@ Mr. Burger</title>
    <div class="container">
         <h2 class="form_tytle tytle tytle_yellow">Закажите доставку</h2>
        
-            <form action="" class="form_elem">
+            <form action="server.php" method="POST" class="form_elem" id="order_form">
                 <div class="form_content">
                   <div class="form_content_part">
                    <div class="form_row">
-                       <label  class="form_block">
+                       <label for="user-name" class="form_block" >
                            <span class="form_block_tytle">Имя</span >
-                           <input type="text" class="form_input">
+                           <input id="user-name" name="user-name" type="text" class="form_input">
                        </label>
-                       <label  class="form_block">
+                       <label for="user-phone" class="form_block">
                            <span  class="form_block_tytle">Телефон</span >
-                           <input type="text" class="form_input">
+                           <input id="user-phone" name="user-phone" type="text" class="form_input">
                        </label>
                    </div>
                    
                      <div class="form_row">
-                       <label  class="form_block">
+                       <label  for="user-street" class="form_block">
                            <span  class="form_block_tytle">Улица</span >
-                           <input type="text" class="form_input">
+                           <input id="user-street" name="user-street" type="text" class="form_input">
                        </label>
                     </div>
                     
                      <div class="form_row">
-                       <label  class="form_block">
+                       <label  for="user-house"  class="form_block">
                            <span  class="form_block_tytle">Дом</span >
-                           <input type="text" class="form_input">
+                           <input id="user-house" name="user-house"  type="text" class="form_input">
                        </label>
-                       <label  class="form_block">
+                       <label for="user-block"  class="form_block">
                            <span  class="form_block_tytle">Корпус</span >
-                           <input type="text" class="form_input">
+                           <input id="user-block" name="user-block"  type="text" class="form_input">
                        </label>
-                       <label  class="form_block">
+                       <label  for="user-apartment"  class="form_block">
                            <span class="form_block_tytle">Квартира</span >
-                           <input type="text" class="form_input">
+                           <input id="user-apartment" name="user-apartment"  type="text" class="form_input">
                        </label>
-                       <label  class="form_block">
+                       <label   for="user-floor"  class="form_block">
                            <span  class="form_block_tytle">Этаж</span >
-                           <input type="text" class="form_input">
+                           <input id="user-floor" name="user-floor"  type="text" class="form_input">
                        </label>
                    </div>
              </div>
                    <div class="form_content_part">
                     <div class="form_row">
-                    <label  class="form_block">
+                    <label  for="user-comment"  class="form_block">
                    <span  class="form_block_tytle">Комментарий</span >
                    <textarea name="comments" class="form_input" cols="30" rows="6"></textarea>
                         </label>
@@ -812,14 +812,14 @@ Mr. Burger</title>
                        
                          <div class="form_row radio_buttons">
                              <div class="radio_buttons_one">
-                          <label class="radio_buttons"><span class="form_block_tytle radio_tytle">Потребуется сдача</span>
+                          <label  class="radio_buttons"><span class="form_block_tytle radio_tytle">Потребуется сдача</span>
   <input type="radio" checked="checked" name="radio">
   
   <span class="checkradio"></span>
 </label>
 </div>
  <div class="radio_buttons_one">
-<label class="radio_buttons"><span class="form_block_tytle radio_tytle">Оплата по карте</span>
+<label    class="radio_buttons"><span class="form_block_tytle radio_tytle">Оплата по карте</span>
   <input type="radio" name="radio">
   <span class="checkradio"></span>
 </label>
@@ -828,7 +828,7 @@ Mr. Burger</title>
                         </div>
                        
                         <div class="form_row">
-                       <label class="dontcall"> <span class="form_block_tytle radio_tytle">Не перезванивать</span >
+                       <label   class="dontcall"> <span class="form_block_tytle radio_tytle">Не перезванивать</span >
                           <input type="checkbox" checked="checked">
                           <span class="checkboxing"></span>
                          </label>
@@ -836,8 +836,8 @@ Mr. Burger</title>
                     
                        
                        <div class="form_row">
-                           <a href="#" class="order_buttom">Заказать </a>
-                            <a href="#" class="clean_bottom ">Очистить</a>
+                         <a href="#" class="order_buttom">Заказать </a>
+                        <a href="#" class="clean_bottom ">Очистить</a> 
                        </div>
                        
                     </div>
