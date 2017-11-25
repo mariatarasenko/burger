@@ -1591,7 +1591,11 @@ h6 {
       -webkit-flex-direction: column;
       -ms-flex-direction: column;
       flex-direction: column;
-      text-align: center; } }
+      text-align: center;
+      padding-top: 25%; } }
+  @media screen and (max-width: 643px) {
+    .slider_content_slide {
+      margin-top: 0; } }
 
 .scroll_button_prev {
   position: absolute;

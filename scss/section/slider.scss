@@ -36,14 +36,23 @@
     align-items: center;
     position: relative;
  
-    @include big_tablets {
-        }
+  
 
 @include tablets {
     margin-top: -10%;          
 flex-direction: column;
 text-align:center;
+padding-top: 25%;
 }
+
+@include medium_tablets{
+    margin-top: 0;
+   
+}
+}
+
+@include mobile{
+   
 }
 
 .scroll_button_prev{
