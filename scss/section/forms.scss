@@ -184,13 +184,20 @@
     margin-left: rem(19px);
     margin-top: rem(6px);
     text-transform: none;
-    font-size: rem(14px);
+    font-size: rem(16px);
+    background-color: transparent;
 }
 
 .ordering_button{
-    display: none;
+    border: none;
+    font-family: 'ubunturegular', Arial, sans-serif;
+    color: #fff;
 }
 
+.main_button{
+    text-transform: uppercase;
+    
+}
 
 
 

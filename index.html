@@ -812,15 +812,15 @@ Mr. Burger</title>
                        
                          <div class="form_row radio_buttons">
                              <div class="radio_buttons_one">
-                          <label  class="radio_buttons"><span class="form_block_tytle radio_tytle">Потребуется сдача</span>
-  <input type="radio" checked="checked" name="radio">
+                          <label  class="radio_buttons" for="pay-cash"><span class="form_block_tytle radio_tytle">Потребуется сдача</span></label>
+  <input type="radio"  name="pay-option" id="pay-cash" value="сдача">
   
   <span class="checkradio"></span>
-</label>
+
 </div>
  <div class="radio_buttons_one">
-<label    class="radio_buttons"><span class="form_block_tytle radio_tytle">Оплата по карте</span>
-  <input type="radio" name="radio">
+<label   class="radio_buttons" for="pay-сard"><span class="form_block_tytle radio_tytle">Оплата по карте</span>
+  <input type="radio" name="pay-option" id="pay-сard" value="карта">
   <span class="checkradio"></span>
 </label>
      </div> 
@@ -828,16 +828,16 @@ Mr. Burger</title>
                         </div>
                        
                         <div class="form_row">
-                       <label   class="dontcall"> <span class="form_block_tytle radio_tytle">Не перезванивать</span >
-                          <input type="checkbox" checked="checked">
+                       <label  for="dont-call" class="dontcall"> <span class="form_block_tytle radio_tytle">Не перезванивать</span >
+                          <input  type="checkbox" id="dont-call" name="dont-call" value="1" checked="checked">
                           <span class="checkboxing"></span>
                          </label>
                            </div>
                     
                        
                        <div class="form_row">
-                         <a href="#" class="order_buttom">Заказать </a>
-                        <a href="#" class="clean_bottom ">Очистить</a> 
+                        <button type="submit" class="ordering_button order_buttom main_button" >   Заказать</button>  
+                       <button  type="reset" class="ordering_button clean_bottom" >   Очистить</button> 
                        </div>
                        
                     </div>
