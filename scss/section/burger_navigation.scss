@@ -6,8 +6,13 @@
     width: 100vw;
     height: 100%;
     z-index: 8;
-    transition: display 2s ;
+    
     display: none;    
+}
+
+.open{
+  display: block;
+  
 }
 .burger_nav_list{
     display: flex;

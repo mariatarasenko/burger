@@ -34,21 +34,32 @@ $(document).ready(() => {
         console.log($containerWidth); 
 
 // opened burger-menu
-        $('.burger_menu').on('click', (e) => {
+        $('.burger_nav_container').on('click', (e) => {
             e.preventDefault();
-            $('.burger_nav_hidden').css({
-                display:'block'
+            $('.burger_nav_hidden').toggleClass('open');
+            $('.burger_nav_container').css({
+                'z-index': 100
             });
        });
 
+       //change icon burger_menu
+       $(".burger_nav_container").on("click", function() {
+        const that = $(this);    
+        if (that.hasClass("is-open")) {
+          that.removeClass("is-open").addClass("is-closed");      
+        } else {
+          that.removeClass("is-closed").addClass("is-open");      
+        }    
+      });
+
 // closed burger-menu
-       $('.close_icon').on('click',(e) => {
-        e.preventDefault();
+    //    $('burger_nav_container is-open').on('click',(e) => {
+    //     e.preventDefault();
            
-            $('.burger_nav_hidden').css({
-                display:'none'
-                });
-       });
+    //         $('.burger_nav_hidden').css({
+    //             display:'none'
+    //             });
+    //    });
 
 
 
@@ -76,6 +87,8 @@ $('.menu_parts').on('click',(e) => {
                 openCont.addClass('active'); 
              }
     });
+
+
 
     //popup slider
 $('.goods').on('click ',(e)=>{
