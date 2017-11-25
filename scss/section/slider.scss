@@ -42,7 +42,7 @@
     margin-top: -10%;          
 flex-direction: column;
 text-align:center;
-padding-top: 25%;
+padding-top: 15%;
 }
 
 @include medium_tablets{
@@ -52,7 +52,7 @@ padding-top: 25%;
 }
 
 @include mobile{
-   
+    padding-top: 25%;
 }
 
 .scroll_button_prev{

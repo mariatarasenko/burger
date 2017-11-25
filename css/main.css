@@ -1592,10 +1592,13 @@ h6 {
       -ms-flex-direction: column;
       flex-direction: column;
       text-align: center;
-      padding-top: 25%; } }
+      padding-top: 15%; } }
   @media screen and (max-width: 643px) {
     .slider_content_slide {
       margin-top: 0; } }
+
+@media screen and (max-width: 480px) {
+  padding-top: 25%; }
 
 .scroll_button_prev {
   position: absolute;
