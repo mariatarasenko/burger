@@ -16,7 +16,11 @@
     padding-left: rem(77px);
     z-index: 10;
     
-      
+     @include big_tablets{
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+     } 
+
     @include tablets{
     padding-left: 1%;
     }

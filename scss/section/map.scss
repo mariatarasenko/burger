@@ -1,17 +1,24 @@
-#map{
+.our_map{
     width:100%;
+    max-height: 91%;
     background-color: gray;
    // background-image: url(../../burger/images/find/bg-map.jpg) ;
     // background-position: bottom;
     // background-size: cover;
-    // position: relative;
-    display: flex;    
+    position: relative;
+    overflow: hidden;
+   // display: flex; 
+   // flex: 1;  
+   @include tablets{
+    max-height: 93%;
+   }
+
     }
 
 
 
 .footer{
-    position: relative; 
+    max-height: 8%; 
 }
 .buttom{
     height: rem(60px);

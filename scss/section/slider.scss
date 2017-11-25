@@ -34,6 +34,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
  
     @include big_tablets {
         }
@@ -66,6 +67,7 @@ text-align:center;
     }
 }
 .content_desc{
+   margin-left: rem(15px); 
     max-width: rem(441px);
   }
 
@@ -85,9 +87,7 @@ text-align:center;
     display: flex;
     align-items: baseline;
 }
-// .price{
 
-// }
 
 //............................................ свойства свг графики
 .value{
@@ -98,44 +98,19 @@ text-align:center;
 
 .kkal_picture{
      position: absolute;
-    bottom:rem(86px);
-    left: rem(80px);
+     bottom: 11.375rem;
+     left: 0.5rem;
     z-index:10 ;
     @include tablets {
         position: absolute;
-        top:rem(36px);
-    left: 85%;
-     
+        top: 8.25rem;
+        left: 85%;
     }
 }
+
 .svg_kkal{
     width: rem(60px);
     height: rem(60px);
-}
-
-.goods{
-    position: absolute;
-   top:rem(89px);
-    left: rem(78px);
-    background-color: rgba($orange, 0.4);
-    padding: rem(16px) rem(23px) rem(14px) rem(24px);
-    border-radius: 5px;
-    
-    @include tablets {
-        position: absolute;
-        top:rem(36px);
-    left: rem(47px);
-    }
-}
-.svg_goods{
-    width: rem(46px);
-    height: rem(44px);
-}
-
-.goods_desc{
-    font-family:  'gagalinregular';
-    font-size: rem(14px);
-    color:#fff;
 }
 
 .kkal_text{
@@ -147,7 +122,7 @@ text-align:center;
     left:rem(13px);
     
     @include tablets{
-        bottom:91%;
+        bottom:92%;
     }
 }
 
@@ -164,7 +139,7 @@ text-align:center;
 }
 .swiper-container {
     max-width: 100%;
-    height:800px;
+    height:rem(800px);
   }
 
   .swiper-button-prev{
@@ -175,10 +150,79 @@ text-align:center;
     background-image: none;
   }
 
-  .content_picture{
-     // flex:1;
-  }
+//////////////////////////////////////////////////////////////////////////////// popup settings
 
-  .content_desc{
-     // flex:1;
-  }
+.goods{
+    position: absolute;
+    top: 4.563rem;
+    left: -0.125rem;
+    background-color: rgba($orange, 0.4);
+    padding: rem(16px) rem(23px) rem(14px) rem(24px);
+    border-radius: 5px;
+    
+    @include tablets {
+        position: absolute;
+        top: 8.25rem;
+    left: rem(47px);
+    }
+}
+.svg_goods{
+    width: rem(46px);
+    height: rem(44px);
+}
+
+.goods_desc{
+    font-family:  'gagalinregular';
+    font-size: rem(14px);
+    color:#fff;
+}
+
+
+.goods_popup{
+    position: absolute;
+    left: rem(90px);
+    top: 0;
+    opacity: 0;
+    transition: opacity .5s;
+    background-color: #fff;
+    width: rem(270px);
+    border-radius: rem(10px);
+    padding: rem(20px) rem(25px);
+}
+
+.opened  {
+    
+    opacity: 1;
+}
+
+
+
+.goods_popup_item{
+    font-size: rem(14px);
+    display: flex;
+    align-items: center;
+    margin-bottom: rem(10px);
+    color: $black;
+    cursor: default;
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.goods_popup_pic{
+    margin-right: rem(25px);
+}
+
+.goods_popup_pic_svg{
+    width: rem(40px);
+    height: rem(40px);
+}
+
+.goods_popup_product{
+    margin-right: auto;
+    font-weight: 500;
+}
+
+.goods_popup_weight{
+    
+}

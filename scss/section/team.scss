@@ -28,9 +28,13 @@
     display: flex;
     flex-direction: column;
     margin-left: rem(80px);
-     
+    
+    @include big_tablets {
+        margin-left: 2rem;
+    }
     @include tablets {
     text-align: center;
+   
   }
 }
 
@@ -79,6 +83,11 @@
     width:70%;
     margin-top: rem(25px);
     margin-left: rem(10px);
+
+    @include big_tablets{
+        margin-top: 1rem;
+        margin-left: 2rem;
+    }
 }
 
 .team_prof{
@@ -119,8 +128,6 @@
     display: flex;
     align-items: center;
     color:#fff;
-   // width: rem(331px);
-    //display: none;
     transition: opacity 2s; 
     transition: max-height 1s; 
     opacity: 0;
@@ -140,7 +147,7 @@
 .active .team_info{
 opacity:1;
 visibility: visible;
-max-height: 250px; 
+max-height: rem(250px); 
 transition: opacity 2s;
 }
 

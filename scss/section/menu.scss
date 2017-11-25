@@ -25,7 +25,7 @@
     @include big_tablets() {
         position: absolute;
         right: 75%;
-        top: 43px;
+        top: rem(43px);
     } 
 
     @include tablets() {
@@ -38,7 +38,7 @@
 @include medium-tablets() {
     position: absolute;
     right: 70%;
-    top: 43px;
+    top: rem(43px);
 } 
 
     @include mobile() { 
@@ -83,7 +83,7 @@
      padding: 20px;
      display: flex;
      align-items: center;
-     width: 80px;
+     width: rem(80px);
      cursor: pointer;
 }
 

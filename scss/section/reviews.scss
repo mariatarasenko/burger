@@ -16,7 +16,7 @@
     
     @include tablets{
        width:50%;
-       min-height: 200px;
+       min-height: rem(200px);
     }
     
      
@@ -32,13 +32,17 @@
 
 .reviews_descr {
     background: rgba(#454545, .7);
-    min-height: 200px;
+    min-height: rem(200px);
     opacity: 0;
     transition: opacity .3s;
     padding-left: rem(21px);
     padding-right: rem(34px);
     padding-bottom:  15%;
     text-align: left;
+
+    @include big_tablets{
+        min-height: 100%;
+    }
     
     
   //  @include mobile {
@@ -56,6 +60,10 @@
     padding-top: rem(30px);
     padding-bottom: rem(50px);
     
+    @include big_tablets{
+        padding-top: 2.875rem;
+        padding-bottom: 1.125rem;
+    }
     @include mobile {
       padding-bottom: rem(20px);
       font-size: rem(28px);
@@ -72,6 +80,10 @@
     padding-bottom: rem(15px);
     display: block;
     
+    @include big_tablets{
+        font-size: 0.8rem;
+        line-height: 1rem;
+    }
     @include mobile {
       display: none;
         
@@ -82,7 +94,7 @@
     background-color: $black;
    display:flex  ;
    flex-wrap:nowrap; 
-    max-width: 120px;
+    max-width: rem(120px);
     padding: 5%;
     font-size: rem(12px);
    
