@@ -36,7 +36,8 @@
     flex-direction: row;
     justify-content: space-between;
     color: #fff;
-    
+    height: 9%; 
+
      @include mobile{
          flex-direction: column;
          justify-content: center;
@@ -72,8 +73,8 @@
 .buttom_right{
    padding-top: rem(16px) ;
       @include mobile{
-        margin-left: 20%;
-        margin-top: -10%;
+        margin-left: 4%;
+   
           padding-top: 0;
           justify-content: center;
     }
