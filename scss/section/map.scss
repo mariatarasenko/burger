@@ -2,13 +2,9 @@
     width:100%;
     max-height: 91%;
     background-color: gray;
-   // background-image: url(../../burger/images/find/bg-map.jpg) ;
-    // background-position: bottom;
-    // background-size: cover;
     position: relative;
     overflow: hidden;
-   // display: flex; 
-   // flex: 1;  
+
    @include tablets{
     max-height: 93%;
    }

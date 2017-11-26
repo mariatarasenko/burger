@@ -221,7 +221,7 @@ function initMap() {
         {lat: 59.949486,  lng: 30.386431},
         {lat: 59.886223, lng:  30.313303},
         {lat:59.927949, lng:  30.497515}
-    ]; //точки бургерных
+    ]; 
 
     var map = new google.maps.Map( mapEl, {
       zoom: 11,

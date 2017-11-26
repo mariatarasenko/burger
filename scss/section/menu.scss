@@ -1,7 +1,5 @@
 #menu {
-    //width: 100%;
-  
-    background-image: url(../../burger/images/menu/menu.jpg);
+     background-image: url(../../burger/images/menu/menu.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -105,20 +103,16 @@
    transition: color 2s;
 
 
-    //   @include mobile() {
-    //      padding: rem(15px);
-    //   }
 }
 
 
 .active .menu_text_par {
     padding:  rem(60px) rem(35px);
     
-    //transition:  max-width 4s;
     transition: all 3s;
     max-width: rem(540px);
     opacity: 1;
-   // visibility: visible;
+ 
    
 }
 .active .menu_tytle{
@@ -135,11 +129,8 @@
     box-sizing: border-box;
     padding: 0;
     width: 100%;
-    
-    opacity: 0;
-   // visibility: hidden;
+     opacity: 0;
    max-width: 0;
-  // transition:  max-width 4s;
    transition: all 3s;
     }
 

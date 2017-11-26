@@ -3,7 +3,7 @@ var submitForm = function(e) {
 
     var form = $(e.target),
         data = form.serialize(),
-        url = form.attr('action');  //файл пхп к которому мы обращаемся
+        url = form.attr('action');  
 
     var request = $.ajax({
         type: 'POST',
@@ -27,4 +27,4 @@ var submitForm = function(e) {
     });
 };
 
-$('#order_form').on('submit', submitForm); //вызываем функцию на нажатие сабмит
+$('#order_form').on('submit', submitForm); 

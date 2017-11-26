@@ -94,13 +94,11 @@
    display:flex  ;
    flex-wrap:nowrap; 
     max-width: rem(120px);
-   // padding: 5%;
     font-size: rem(12px);
    
 
     @include tablets{
         margin: 0 35%;
-       // font-size: rem(10px);
         padding-left: rem(12px);
     }
 
