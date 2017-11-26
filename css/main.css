@@ -1244,20 +1244,20 @@ h6 {
   margin-right: 0.9375rem; }
 
 .form_content_part {
-  width: 45%;
-  margin-left: 5%; }
+  width: 45%; }
   @media screen and (max-width: 768px) {
     .form_content_part {
       width: 100%;
       margin-left: 0; } }
+
+.form_content_right {
+  margin-left: 5%; }
 
 .form_content {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex; }
-  .form_content :first-child {
-    margin-left: 0; }
   @media screen and (max-width: 768px) {
     .form_content {
       -webkit-box-orient: vertical;
