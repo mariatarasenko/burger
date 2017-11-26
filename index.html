@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"/>
       
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
      
  <title>
 Mr. Burger</title>
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.6/css/swiper.css">
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" >
- <link rel="stylesheet" href="../burger/css/main.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.6/css/swiper.css"/>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" />
+ <link rel="stylesheet" href="../burger/css/main.css"/>
 </head>
 
   <body>
@@ -766,25 +766,25 @@ Mr. Burger</title>
                    <div class="form_row">
                        <label for="user-name" class="form_block" >
                            <span class="form_block_tytle">Имя</span >
-                           <input id="user-name" name="user-name" type="text" class="form_input">
+                           <input id="user-name" name="user-name" required type="text" class="form_input">
                        </label>
                        <label for="user-phone" class="form_block">
                            <span  class="form_block_tytle">Телефон</span >
-                           <input id="user-phone" name="user-phone" type="text" class="form_input">
+                           <input id="user-phone" name="user-phone" required type="text" class="form_input">
                        </label>
                    </div>
                    
                      <div class="form_row">
                        <label  for="user-street" class="form_block">
                            <span  class="form_block_tytle">Улица</span >
-                           <input id="user-street" name="user-street" type="text" class="form_input">
+                           <input id="user-street" name="user-street" required type="text" class="form_input">
                        </label>
                     </div>
                     
                      <div class="form_row">
                        <label  for="user-house"  class="form_block">
                            <span  class="form_block_tytle">Дом</span >
-                           <input id="user-house" name="user-house"  type="text" class="form_input">
+                           <input id="user-house" name="user-house" required type="text" class="form_input">
                        </label>
                        <label for="user-block"  class="form_block">
                            <span  class="form_block_tytle">Корпус</span >
@@ -792,7 +792,7 @@ Mr. Burger</title>
                        </label>
                        <label  for="user-apartment"  class="form_block">
                            <span class="form_block_tytle">Квартира</span >
-                           <input id="user-apartment" name="user-apartment"  type="text" class="form_input">
+                           <input id="user-apartment" name="user-apartment" required type="text" class="form_input">
                        </label>
                        <label   for="user-floor"  class="form_block">
                            <span  class="form_block_tytle">Этаж</span >
@@ -804,7 +804,7 @@ Mr. Burger</title>
                     <div class="form_row">
                     <label  for="user-comment"  class="form_block">
                    <span  class="form_block_tytle">Комментарий</span >
-                   <textarea name="comments" class="form_input" cols="30" rows="6"></textarea>
+                   <textarea name="user-comment" id="user-comment" class="form_input" cols="30" rows="6"></textarea>
                         </label>
                        </div>
                        
@@ -813,14 +813,14 @@ Mr. Burger</title>
                          <div class="form_row radio_buttons">
                              <div class="radio_buttons_one">
                           <label  class="radio_buttons" for="pay-cash"><span class="form_block_tytle radio_tytle">Потребуется сдача</span></label>
-  <input type="radio"  name="pay-option" id="pay-cash" value="сдача">
+  <input type="radio"  name="pay-option" id="pay-cash" checked="checked" value="Оплата наличными">
   
   <span class="checkradio"></span>
 
 </div>
  <div class="radio_buttons_one">
 <label   class="radio_buttons" for="pay-сard"><span class="form_block_tytle radio_tytle">Оплата по карте</span>
-  <input type="radio" name="pay-option" id="pay-сard" value="карта">
+  <input type="radio" name="pay-option" id="pay-сard" value="Оплата картой">
   <span class="checkradio"></span>
 </label>
      </div> 
@@ -836,7 +836,7 @@ Mr. Burger</title>
                     
                        
                        <div class="form_row">
-                        <button type="submit" class="ordering_button order_buttom main_button" >   Заказать</button>  
+                        <button type="submit" class="ordering_button order_buttom main_button" id="submit" >   Заказать</button>  
                        <button  type="reset" class="ordering_button clean_bottom" >   Очистить</button> 
                        </div>
                        
@@ -915,7 +915,7 @@ Mr. Burger</title>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.18/jquery.touchSwipe.min.js"></script>
    <script src="./js/one_page_scroll.js"></script>
    <script src="./js/menu.js"  > </script>
-  
+  <script src="./js/forms.js"></script>
    <script src="./js/map.js"></script>
    
    <script async defer

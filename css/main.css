@@ -1,3 +1,10 @@
+.success{
+color:green;
+}
+
+.error{
+color:red;
+}
 .menu_block {
   max-width: 5.1875rem;
   height: 100vh;
@@ -1778,5 +1785,7 @@ h6 {
 .goods_popup_product {
   margin-right: auto;
   font-weight: 500; }
+
+
 
 /*# sourceMappingURL=main.css.map */
