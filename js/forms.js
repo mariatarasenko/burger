@@ -1,17 +1,9 @@
-console.log($);
-
-
 var submitForm = function(e) {
-    console.log('in submitForm');
     e.preventDefault();
 
     var form = $(e.target),
         data = form.serialize(),
-        url = form.attr('action');
-
-    console.log(form);
-    console.log(data);
-    console.log(url);
+        url = form.attr('action');  //файл пхп к которому мы обращаемся
 
     var request = $.ajax({
         type: 'POST',
@@ -35,4 +27,4 @@ var submitForm = function(e) {
     });
 };
 
-$('#order_form').on('submit', submitForm);
+$('#order_form').on('submit', submitForm); //вызываем функцию на нажатие сабмит

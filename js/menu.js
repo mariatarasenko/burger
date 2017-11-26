@@ -1,7 +1,6 @@
 //team accordeon
-let acc = document.querySelector('.team_list'),
+let acc = document.querySelector('.team_list'), 
 list = acc.children;
-console.log( list);
 
 acc.addEventListener('click', event => {
 	let target = event.target
@@ -11,8 +10,8 @@ acc.addEventListener('click', event => {
   
   event.preventDefault()
   target = target.parentNode
-  target = target.parentNode //сделала это, чтобы добраться до  прародителей. так вообще можно делать?
-  console.log(target);
+  target = target.parentNode
+ 
   if(target.classList.contains('active')) {
   	target.classList.remove('active')
     return
@@ -22,7 +21,7 @@ acc.addEventListener('click', event => {
       target.classList.add('active')
     })
   }
-})
+});
 
 $(document).ready(() => {
    
@@ -31,7 +30,7 @@ $(document).ready(() => {
         if ( $containerWidth <= 480){
         $('.reviews_descr_butt').text('читать отзыв')
         };
-        console.log($containerWidth); 
+      
 
 // opened burger-menu
         $('.burger_nav_container').on('click', (e) => {
@@ -51,18 +50,6 @@ $(document).ready(() => {
           that.removeClass("is-closed").addClass("is-open");      
         }    
       });
-
-// closed burger-menu
-    //    $('burger_nav_container is-open').on('click',(e) => {
-    //     e.preventDefault();
-           
-    //         $('.burger_nav_hidden').css({
-    //             display:'none'
-    //             });
-    //    });
-
-
-
     
  //horysontal accordeon
 
@@ -97,7 +84,7 @@ $('.goods').on('click ',(e)=>{
     const $this = $(e.currentTarget);
     const popups = $('.goods_popup');
     const products = $this.children('.goods_popup');
-    console.log($this);
+  
 
     if ($this.hasClass('.goods')){
         return

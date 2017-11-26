@@ -27,7 +27,7 @@ var mySwiper = new Swiper ('.swiper-container', {
       })
     
     mySwiper.on('slideChange', function () {
-      console.log('slide changed');
+     
     });
 
     

@@ -94,7 +94,7 @@
     if (isMobile) {
         $(window).swipe({
           swipe: function (event, direction, distance, duration, fingerCount, fingerData) {
-            console.log(direction);
+         
             scrollToSection(direction);
           }
         })

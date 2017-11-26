@@ -210,18 +210,18 @@ function initMap() {
         ] 
         } 
         ];
-    var uluru = {
+    var uluru = {         
         lat: 59.939095,
         
         lng: 30.315868
     };
     
-    var locations = [
+    var locations = [ 
         {lat: 59.978750,  lng: 30.291330},
         {lat: 59.949486,  lng: 30.386431},
         {lat: 59.886223, lng:  30.313303},
         {lat:59.927949, lng:  30.497515}
-    ];
+    ]; //точки бургерных
 
     var map = new google.maps.Map( mapEl, {
       zoom: 11,

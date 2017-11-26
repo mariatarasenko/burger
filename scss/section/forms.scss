@@ -46,6 +46,8 @@
 .form_content_part{
     width: 45%;
     margin-left: 5%;
+
+    
   
     @include tablets{
        width:100%;
@@ -55,6 +57,10 @@
 
 .form_content{  
   display: flex;
+
+  :first-child{
+    margin-left: 0;
+}
 
   @include tablets {
     flex-direction: column;

@@ -104,23 +104,26 @@
 }
 .figure_hidden{
     @extend .figure;
+    transition: transform 1s;
     
 }
 
 .active .figure_hidden{
     @extend .figure;
-     border-top: none;
-     border-bottom: 12px solid $yellow;
+    transform: rotate(180deg);
+    transition: transform 1s;
     }
 
 .team_name{
     @extend .name;
     color: #ffffff;
+    transition: color 2s;
   }
 
 .active .team_name{
     @extend .name;
-    color: $yellow; 
+    color: $yellow;
+    transition: color 2s; 
 }
 
 .team_info{
