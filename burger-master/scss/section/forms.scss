@@ -1,0 +1,212 @@
+.forms{
+    background-color:$gray;
+    background-image: url(../images/bg/bg-forms.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.form_tytle{
+    text-align: center;
+    margin-top: rem(61px);
+    margin-bottom: rem(87px);
+    margin-bottom: rem(12px);
+       
+        @include tablets{
+            margin-bottom: 0;
+            margin-top: 0;
+    }
+}
+
+.form_block_tytle{
+    color: #fff;
+     }
+
+.form_input{
+    border: none;
+    border-radius: rem(5px);
+    padding: rem(9px) rem(16px);
+    width: 100%;
+    margin-top: rem(10px);
+      @include tablets{
+          margin-top: 0;
+    }
+}
+
+.form_row{
+    display: flex;
+    margin-bottom: rem(10px);
+}
+
+.form_block{
+    flex: 1;
+    margin-right: rem(15px);
+}
+
+.form_content_part{
+    width: 45%;
+   
+
+    
+  
+    @include tablets{
+       width:100%;
+       margin-left: 0;
+    }
+}
+
+.form_content_right{
+ margin-left: 5%;
+}
+
+.form_content{  
+  display: flex;
+
+
+
+  @include tablets {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+  }
+}
+
+
+.radio_buttons{
+    display: flex;
+    flex-direction: row;      
+  }
+
+.radio_buttons_one{
+    flex: 1;
+ }
+
+.radio_tytle{
+    margin-left:rem(26px);
+    margin-top:rem(-5px);
+}
+
+
+
+.dontcall{
+    display: block;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+ 
+        input{
+    position: absolute;
+     opacity: 0;
+            }
+                 }
+
+
+.checkboxing{
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 19px;
+    height: 18px;
+    background-color: #eee;
+}
+
+.dontcall:hover input ~ .checkboxing {
+    background-color: #ccc;
+}
+
+
+.checkboxing:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.dontcall input:checked ~ .checkboxing:after {
+    display: block;
+}
+
+.dontcall .checkboxing:after {
+    left: 5px;
+    top: 1px;
+    width: 9px;
+    height: 11px;
+    border: solid $orange;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+  }
+
+.checkboxes input:checked  .checkboxing:after {
+    display: block;
+}
+
+.radio_buttons {
+    display: flex;
+    position: relative;
+ 
+    margin-bottom: 12px;
+    cursor: pointer;
+    user-select:none;
+
+
+ input {
+    position: absolute;
+    opacity: 0;
+}
+}
+
+.checkradio {
+    position: absolute;
+    top:0;
+    left: 0;
+    @include circle(18px,#eee);    
+}
+
+.radio_buttons:hover input ~ .checkradio {
+    background-color: #ccc;
+}
+
+
+.checkradio:after {
+    content: "";
+    position: absolute;
+    display: none;
+    }
+
+.radio_buttons input:checked ~ .checkradio:after {
+    display: block;
+    
+}
+
+.radio_buttons .checkradio:after {
+    top: 5px;
+	left: 5px;
+    width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: $orange;
+    
+
+}
+
+.clean_bottom{
+    margin-left: rem(19px);
+    margin-top: rem(6px);
+    text-transform: none;
+    font-size: rem(16px);
+    background-color: transparent;
+}
+
+.ordering_button{
+    border: none;
+    font-family: 'ubunturegular', Arial, sans-serif;
+    color: #fff;
+}
+
+.main_button{
+    text-transform: uppercase;
+    
+}
+
+
+
+

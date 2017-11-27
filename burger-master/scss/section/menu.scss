@@ -1,0 +1,141 @@
+#menu {
+     background-image: url(../../burger/images/menu/menu.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+     position: relative;
+}
+
+.menu_wrapp {
+    width: 100%;
+    margin: auto;
+    max-width: 960px;
+  }
+
+.global_tytle {
+    position: absolute;
+    right: 80%;
+    top: 43px;
+    z-index: 1;
+    font-size: rem(72px);
+
+    @include big_tablets() {
+        position: absolute;
+        right: 75%;
+        top: rem(43px);
+    } 
+
+    @include tablets() {
+        
+        margin-left:rem(34px);
+        margin-top: rem(32px);
+        right: 70%;
+        z-index: 0;
+}
+
+@include medium-tablets() {
+    position: absolute;
+    right: 60%;
+    top: rem(43px);
+} 
+
+    @include mobile() { 
+        font-size: rem(64px);
+          
+     
+}
+      
+}
+
+
+.menu_parts {
+    display: flex;
+    max-width:70%;
+    height: 100%;
+     position: absolute;
+     top: 0;
+     right: 0;
+     bottom: 0;
+     margin: 0;
+     padding: 0;
+
+     @include mobile() {  
+        max-width:100%;
+    }
+     
+}
+
+.menu_content{
+    overflow: hidden;
+    display: flex;
+    
+}
+
+.menu_img{
+    height: 100%; 
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+     position: relative;
+     padding: 20px;
+     display: flex;
+     align-items: center;
+     width: rem(80px);
+     cursor: pointer;
+}
+
+
+.menu_tytle {
+    position: absolute;
+    top: 30%;
+    left: 15%;
+   writing-mode:vertical-rl;
+   transform: scale(-1, -1);
+   color: #ffffff;
+   font-family: 'gagalinregular';
+   font-size:rem(42px);
+   font-weight: 400;
+   text-align: center;
+   display: block;
+   white-space: nowrap;
+   transition: color 2s;
+
+
+}
+
+
+.active .menu_text_par {
+    padding:  rem(60px) rem(35px);
+    
+    transition: all 3s;
+    max-width: rem(540px);
+    opacity: 1;
+ 
+   
+}
+.active .menu_tytle{
+    color: $yellow;
+}
+
+ .menu_text_par {
+   background-color:  rgba(39, 39, 39, 0.84);
+    height: 100%; 
+    color:#fff;
+    font-family:'ubunturegular';
+    font-size:rem(14px);
+    font-weight: 300;
+    box-sizing: border-box;
+    padding: 0;
+    width: 100%;
+     opacity: 0;
+   max-width: 0;
+   transition: all 3s;
+    }
+
+    
+
+
+
+
