@@ -13,5 +13,6 @@
 2. Smart accordeons on jQuery an Native JavaScript
 3. Modal windows (plugin)
 4. Slider (plugin)
+5. Google Maps 
 
 #Demo:   https://mariatarasenko.github.io/burger/
